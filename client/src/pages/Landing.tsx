@@ -1,10 +1,14 @@
 import { Logo } from '../components'
 import styled from 'styled-components'
+import { useAppContext } from '../context/appContext'
 
 const Landing = () => {
+  const { toggleWelcome, hello } = useAppContext()
   return (
     <Wrapper>
       <h1>Landing</h1>
+      {hello ? <p>Welcome!</p> : <p>Pas hello :/</p>}
+      <button onClick={toggleWelcome}>Context</button>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         laboriosam commodi assumenda tenetur consequatur alias rerum officiis modi

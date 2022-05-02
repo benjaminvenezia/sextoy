@@ -1,22 +1,28 @@
 import React, { useState, useReducer, useContext } from 'react'
 import reducer from './reducer'
 
-const [state, dispatch] = useReducer(reducer, initialState)
+import { TOGGLE_WELCOME } from './actions'
 
 export const initialState = {
   isLoading: false,
-  showAlert: false,
-  alertText: '',
-  alertType: '',
+  hello: true,
 }
+
 const AppContext = React.createContext()
+
 const AppProvider = ({ children }) => {
-  const [state, setState] = useState(initialState)
+  // const [state, setState] = useState(initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  const toggleWelcome = () => {
+    dispatch({ type: TOGGLE_WELCOME })
+  }
 
   return (
     <AppContext.Provider
       value={{
         ...state,
+        toggleWelcome,
       }}
     >
       {children}
@@ -27,3 +33,5 @@ const AppProvider = ({ children }) => {
 export const useAppContext = () => {
   return useContext(AppContext)
 }
+
+export { AppProvider }
