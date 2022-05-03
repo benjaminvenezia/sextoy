@@ -1,0 +1,16 @@
+[
+  {
+    "label_question": "Etes vous un homme ou une femme?",
+    "responses": [
+      { "label_answer": "Je suis une femme", "tags": ["woman"] },
+      { "label_answer": "Je suis un homme", "tags": ["man"] }
+    ]
+  },
+  {
+    "label_question": "Etes vous un homme ou une femme?",
+    "responses": [
+      { "label_answer": "Je suis une femme", "tags": ["woman"] },
+      { "label_answer": "Je suis un homme", "tags": ["man"] }
+    ]
+  }
+]

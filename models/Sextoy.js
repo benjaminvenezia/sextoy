@@ -10,29 +10,22 @@ const SextoySchema = new mongoose.Schema({
     required: [true, 'Merci de donner une description au sextoy'],
   },
   length: {
-    type: Number,
-    required: false,
-  },
-  width: {
-    type: Number,
-    required: false,
-  },
-  material: {
     type: String,
-    required: false,
+    enum: ['sm', 'md', 'lg', 'xl'],
+    required: [true, 'Merci de donner une taille au produit.'],
   },
   color: {
     type: String,
+    enum: ['beige', 'colored'],
     required: false,
   },
-  gender: {
+  width: {
     type: String,
-    enum: ['homme', 'femme'],
-    default: 'femme',
+    enum: ['sm', 'md', 'lg', 'xl'],
+    required: [true, 'Merci de donner une largeur au produit.'],
   },
-  url: {
-    type: String,
-    required: [true, 'Merci de préciser une url de redirection vers le produit'],
+  tags: {
+    type: [String],
   },
 })
 
