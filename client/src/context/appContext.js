@@ -4,7 +4,7 @@ import reducer from './reducer'
 import { TOGGLE_WELCOME } from './actions'
 
 export const initialState = {
-  isLoading: false,
+  question: [],
   hello: true,
 }
 

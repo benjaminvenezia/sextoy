@@ -14,10 +14,16 @@ const QuestionSchema = new mongoose.Schema({
       },
       tags: {
         type: [String],
-        required: [true, 'Merci de préciser les tags lié à cette'],
+        required: [true, 'Merci de préciser les tags lié à cette réponse'],
       },
     },
   ],
+  level: {
+    type: Number,
+  },
+  tags_question: {
+    type: [String],
+  },
 })
 
 export default mongoose.model('Question', QuestionSchema)

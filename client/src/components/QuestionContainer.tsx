@@ -5,7 +5,7 @@ const QuestionContainer = () => {
   return (
     <Wrapper>
       <Question
-        questions={[
+        question={[
           { id: 0, label: 'Es-tu un homme ou une femme ? ' },
           { id: 1, label: 'es-tu célibataire ou en couple?' },
         ]}

@@ -1,16 +1,21 @@
 [
   {
-    "label_question": "Etes vous un homme ou une femme?",
+    "label_question": "As-tu déjà utilisé un sextoy?",
     "responses": [
-      { "label_answer": "Je suis une femme", "tags": ["woman"] },
-      { "label_answer": "Je suis un homme", "tags": ["man"] }
-    ]
+      { "label_answer": "oui", "tags": ["connaisseur"] },
+      { "label_answer": "non", "tags": ["neophyte"] }
+    ],
+    "level": 1,
+    "tags_question": [""]
   },
   {
-    "label_question": "Etes vous un homme ou une femme?",
+    "label_question": "A quelle fréquence tu l'utilises?",
     "responses": [
-      { "label_answer": "Je suis une femme", "tags": ["woman"] },
-      { "label_answer": "Je suis un homme", "tags": ["man"] }
-    ]
+      { "label_answer": "Régulièrement", "tags": ["regulier"] },
+      { "label_answer": "Occasionnellement", "tags": ["occasionnel"] },
+      { "label_answer": "Rarement", "tags": ["rarement"] }
+    ],
+    "level": 2,
+    "tags_question": ["connaisseur"]
   }
 ]
