@@ -10,17 +10,7 @@ import axios from 'axios'
 
 //Quand on clique on doit immédiatement trouver une question relative aux tags contenus dans tagsNextQuestion
 
-const Question = () => {
-  const [question, setQuestion] = useState()
-  const [tagsNextQuestion, setTagsNextQuestion] = useState([])
-
-  useEffect(() => {
-    axios.get(`http://localhost:5004/api/v1/`).then((res) => {
-      const questions = res.data
-      setQuestion(questions)
-    })
-  }, [])
-
+const Question = ({ question, handleClick }) => {
   const questionObj = question?.questions[0]
 
   //on destructure pas ici
@@ -28,32 +18,10 @@ const Question = () => {
   const label_question = questionObj?.label_question
   const responses = questionObj?.responses
   const tags_question = questionObj?.tags_question
-  let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(',')}`
-
-  //let url = `http://localhost:5004/api/v1/tags?tags=neophyte, fun, sobre`
-  const handleClick = (tags) => {
-    tags.forEach((tag) => {
-      setTagsNextQuestion([...tagsNextQuestion, tag])
-    })
-
-    console.log(url)
-    console.log(tagsNextQuestion)
-
-    callApi(url)
-  }
-
-  const callApi = (url) => {
-    axios.get(url).then((res) => {
-      const question = res.data
-      setQuestion(question)
-    })
-  }
-
   return (
     <Wrapper>
       <h1>{label_question}</h1>
 
-      {console.log(tagsNextQuestion)}
       {responses?.map((r) => {
         return (
           <HipsterButton onClick={() => handleClick(r.tags)} key={r._id}>

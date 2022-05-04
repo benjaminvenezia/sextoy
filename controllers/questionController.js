@@ -10,8 +10,6 @@ const getQuestionByTags = async (req, res) => {
     tags_question: { $all: tags },
   })
 
-  // PersonModel.find({ favoriteFood : { $all : ["sushi", "bananas"] }, ...})
-
   res.status(StatusCodes.OK).json({ questions })
 }
 
