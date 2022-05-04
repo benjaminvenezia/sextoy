@@ -1,33 +1,39 @@
 import styled from 'styled-components'
 import { HipsterButton } from '.'
 import { useState } from 'react'
+import axios from 'axios'
 // import { Question as QuestionModel } from '@/models/Question'
 
 type Props = {
   question: QuestionModel,
 }
 
+//Extraire la donnée dans le contexte
+// - les tags
+
 const Question = ({ question }: Props) => {
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
 
-  console.log(question)
   const questionObj = question?.questions[0]
-  //on destructure pas encore
+
+  //on destructure pas ici
   const level = questionObj?.level
   const label_question = questionObj?.label_question
   const responses = questionObj?.responses
   const tags_question = questionObj?.tags_question
 
-  // console.log('level :', level)
-  // console.log('label_question :', label_question)
-  // console.log('responses:', responses)
-  // console.log('tags question:', tags_question)
-  // console.log('label_question : ', label_question)
-  // console.log('level : ', arrResponse)
-
   const handleClick = (tags) => {
     tags.forEach((tag) => {
       setTagsNextQuestion([...tagsNextQuestion, tag])
+    })
+
+    let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(',')}`
+
+    console.log(url)
+
+    axios.get(url).then((res) => {
+      const question = res.data
+      console.log(question)
     })
   }
 

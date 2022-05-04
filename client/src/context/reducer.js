@@ -1,9 +1,16 @@
-import { TOGGLE_WELCOME, ADD_QUESTION_SUCCESS } from './actions'
+import { TOGGLE_WELCOME, ADD_QUESTION_SUCCESS, ADD_TAG } from './actions'
 
 import { initialState } from './appContext'
 
 const reducer = (state, action) => {
   if (action.type === TOGGLE_WELCOME) {
+    return {
+      ...state,
+      hello: !state.hello,
+    }
+  }
+
+  if (action.type === ADD_TAG) {
     return {
       ...state,
       hello: !state.hello,

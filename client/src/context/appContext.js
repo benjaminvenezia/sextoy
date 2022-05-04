@@ -2,11 +2,16 @@ import React, { useState, useReducer, useContext } from 'react'
 import reducer from './reducer'
 import axios from 'axios'
 
-import { TOGGLE_WELCOME, ADD_QUESTION_SUCCESS, ADD_QUESTION_ERROR } from './actions'
+import {
+  TOGGLE_WELCOME,
+  ADD_QUESTION_SUCCESS,
+  ADD_QUESTION_ERROR,
+  ADD_TAG,
+} from './actions'
 
 export const initialState = {
   questions: [],
-  tags_questions: ['connaisseur'],
+  tags_questions: [],
   hello: true,
 }
 
@@ -18,6 +23,10 @@ const AppProvider = ({ children }) => {
 
   const toggleWelcome = () => {
     dispatch({ type: TOGGLE_WELCOME })
+  }
+
+  const addQuestionTag = () => {
+    dispatch({ type: ADD_TAG })
   }
 
   const getQuestion = (tags) => {

@@ -17,5 +17,34 @@
     ],
     "level": 2,
     "tags_question": ["connaisseur"]
+  },
+  {
+    "label_question": "Tu es débutant, voudrais-tu quelques chose de fun?",
+    "responses": [
+      { "label_answer": "oui", "tags": ["fun"] },
+      { "label_answer": "non", "tags": ["realiste"] }
+    ],
+    "level": 3,
+    "tags_question": ["neophyte"]
+  },
+  {
+    "label_question": "Tu et débutant et tu désires du fun! Plutôt coloré?",
+    "responses": [
+      { "label_answer": "oui", "tags": ["coloré"] },
+      { "label_answer": "non", "tags": ["sobre"] }
+    ],
+    "level": 4,
+    "tags_question": ["neophyte, fun"]
+  },
+  {
+    "label_question": "Pas de couleur, c'est compris! Quelle taille pour ton sextoy?",
+    "responses": [
+      { "label_answer": "très grand!", "tags": ["xl"] },
+      { "label_answer": "grand!", "tags": ["l"] },
+      { "label_answer": "moyen", "tags": ["m"] },
+      { "label_answer": "petit", "tags": ["s"] }
+    ],
+    "level": 5,
+    "tags_question": ["neophyte, fun, sobre"]
   }
 ]
