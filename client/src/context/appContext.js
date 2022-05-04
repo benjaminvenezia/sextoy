@@ -11,7 +11,7 @@ import {
 
 export const initialState = {
   questions: [],
-  tags_questions: [],
+  tags: [],
   hello: true,
 }
 

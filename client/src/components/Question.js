@@ -1,18 +1,26 @@
 import styled from 'styled-components'
 import { HipsterButton } from '.'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 // import { Question as QuestionModel } from '@/models/Question'
 
-type Props = {
-  question: QuestionModel,
-}
+// type Props = {
+//   question: QuestionModel,
+// }
 
 //Extraire la donnée dans le contexte
 // - les tags
 
-const Question = ({ question }: Props) => {
+const Question = () => {
+  const [question, setQuestion] = useState()
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
+
+  useEffect(() => {
+    axios.get(`http://localhost:5004/api/v1/`).then((res) => {
+      const questions = res.data
+      setQuestion(questions)
+    })
+  }, [])
 
   const questionObj = question?.questions[0]
 
@@ -28,12 +36,17 @@ const Question = ({ question }: Props) => {
     })
 
     let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(',')}`
+    //let url = `http://localhost:5004/api/v1/tags?tags=neophyte, fun, sobre`
 
     console.log(url)
 
+    callApi(url)
+  }
+
+  const callApi = (url) => {
     axios.get(url).then((res) => {
       const question = res.data
-      console.log(question)
+      setQuestion(question)
     })
   }
 

@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { Question } from '.'
 
-const QuestionContainer = ({ question }: any) => {
+const QuestionContainer = () => {
   return (
     <Wrapper>
-      <Question question={question} />
+      <Question />
     </Wrapper>
   )
 }

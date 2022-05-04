@@ -4,18 +4,18 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const QuestionPage = () => {
-  const [question, setQuestion] = useState()
+  // const [question, setQuestion] = useState()
 
-  useEffect(() => {
-    axios.get(`http://localhost:5004/api/v1/`).then((res) => {
-      const questions = res.data
-      setQuestion(questions)
-    })
-  }, [])
+  // useEffect(() => {
+  //   axios.get(`http://localhost:5004/api/v1/`).then((res) => {
+  //     const questions = res.data
+  //     setQuestion(questions)
+  //   })
+  // }, [])
 
   return (
     <Wrapper>
-      <QuestionContainer question={question} />
+      <QuestionContainer />
     </Wrapper>
   )
 }
