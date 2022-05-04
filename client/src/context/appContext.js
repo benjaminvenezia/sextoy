@@ -1,10 +1,12 @@
 import React, { useState, useReducer, useContext } from 'react'
 import reducer from './reducer'
+import axios from 'axios'
 
-import { TOGGLE_WELCOME } from './actions'
+import { TOGGLE_WELCOME, ADD_QUESTION_SUCCESS, ADD_QUESTION_ERROR } from './actions'
 
 export const initialState = {
-  question: [],
+  questions: [],
+  tags_questions: ['connaisseur'],
   hello: true,
 }
 
@@ -18,11 +20,18 @@ const AppProvider = ({ children }) => {
     dispatch({ type: TOGGLE_WELCOME })
   }
 
+  const getQuestion = (tags) => {
+    try {
+      // const { data } = await axios.post('/api/v1/getQuestionByTags', tags)
+    } catch (error) {}
+  }
+
   return (
     <AppContext.Provider
       value={{
         ...state,
         toggleWelcome,
+        getQuestion,
       }}
     >
       {children}

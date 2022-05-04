@@ -1,21 +1,18 @@
 import styled from 'styled-components'
 import { Question } from '.'
 
-const QuestionContainer = () => {
+const QuestionContainer = ({ question }: any) => {
   return (
     <Wrapper>
-      <Question
-        question={[
-          { id: 0, label: 'Es-tu un homme ou une femme ? ' },
-          { id: 1, label: 'es-tu célibataire ou en couple?' },
-        ]}
-      />
+      <Question question={question} />
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  border: 1px solid red;
+  background-color: white;
+  width: 50%;
+  margin: 100px auto;
 `
 
 export default QuestionContainer

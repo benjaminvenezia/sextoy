@@ -6,7 +6,7 @@
       { "label_answer": "non", "tags": ["neophyte"] }
     ],
     "level": 1,
-    "tags_question": [""]
+    "tags_question": [null]
   },
   {
     "label_question": "A quelle fréquence tu l'utilises?",
