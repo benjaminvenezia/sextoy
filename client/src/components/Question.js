@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { HipsterButton } from '.'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 // import { Question as QuestionModel } from '@/models/Question'
 
@@ -8,8 +8,7 @@ import axios from 'axios'
 //   question: QuestionModel,
 // }
 
-//Extraire la donnée dans le contexte
-// - les tags
+//Quand on clique on doit immédiatement trouver une question relative aux tags contenus dans tagsNextQuestion
 
 const Question = () => {
   const [question, setQuestion] = useState()
@@ -29,16 +28,16 @@ const Question = () => {
   const label_question = questionObj?.label_question
   const responses = questionObj?.responses
   const tags_question = questionObj?.tags_question
+  let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(',')}`
 
+  //let url = `http://localhost:5004/api/v1/tags?tags=neophyte, fun, sobre`
   const handleClick = (tags) => {
     tags.forEach((tag) => {
       setTagsNextQuestion([...tagsNextQuestion, tag])
     })
 
-    let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(',')}`
-    //let url = `http://localhost:5004/api/v1/tags?tags=neophyte, fun, sobre`
-
     console.log(url)
+    console.log(tagsNextQuestion)
 
     callApi(url)
   }
@@ -53,11 +52,7 @@ const Question = () => {
   return (
     <Wrapper>
       <h1>{label_question}</h1>
-      {/* <ul>
-        {tagsNextQuestion.map((tag) => {
-          return <li>{tag}</li>
-        })}
-      </ul> */}
+
       {console.log(tagsNextQuestion)}
       {responses?.map((r) => {
         return (
