@@ -3,17 +3,17 @@ import { Question } from '.'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const QuestionContainer = () => {
-  const [question, setQuestion] = useState()
+const QuestionContainer = ({ setQuestion, question }) => {
+  // const [question, setQuestion] = useState()
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
   let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(', ')}`
 
-  useEffect(() => {
-    axios.get(`http://localhost:5004/api/v1/`).then((res) => {
-      const questions = res.data
-      setQuestion(questions)
-    })
-  }, [])
+  // useEffect(() => {
+  //   axios.get(`http://localhost:5004/api/v1/`).then((res) => {
+  //     const questions = res.data
+  //     setQuestion(questions)
+  //   })
+  // }, [])
 
   const handleClick = (tags) => {
     tags.forEach((tag) => {
