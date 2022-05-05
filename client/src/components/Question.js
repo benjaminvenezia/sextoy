@@ -23,6 +23,14 @@ const Question = ({ question, handleClick }) => {
       <h1>{label_question}</h1>
 
       {responses?.map((r) => {
+        if (r?.disabled) {
+          return (
+            <HipsterButton disabled key={r._id}>
+              {r.label_answer}
+            </HipsterButton>
+          )
+        }
+
         return (
           <HipsterButton onClick={() => handleClick(r.tags)} key={r._id}>
             {r.label_answer}

@@ -1,12 +1,21 @@
 [
   {
+    "label_question": "Etes-vous un homme ou une femme?",
+    "responses": [
+      { "label_answer": "un homme", "tags": ["homme"] },
+      { "label_answer": "une femme", "tags": ["femme"], "disabled": true }
+    ],
+    "level": 1,
+    "tags_match": [null]
+  },
+  {
     "label_question": "As-tu déjà utilisé un sextoy?",
     "responses": [
       { "label_answer": "oui", "tags": ["connaisseur"] },
       { "label_answer": "non", "tags": ["neophyte"] }
     ],
-    "level": 1,
-    "tags_match": [null]
+    "level": 2,
+    "tags_match": ["homme"]
   },
 
   {
@@ -15,7 +24,7 @@
       { "label_answer": "Réaliste", "tags": ["realiste"] },
       { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
     ],
-    "level": 2,
+    "level": 3,
     "tags_match": ["neophyte"]
   },
   {
@@ -24,7 +33,7 @@
       { "label_answer": "Réaliste", "tags": ["realiste"] },
       { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
     ],
-    "level": 2,
+    "level": 3,
     "tags_match": ["connaisseur"]
   },
 
@@ -34,7 +43,7 @@
       { "label_answer": "anal", "tags": ["anal"] },
       { "label_answer": "genital", "tags": ["genital", "genital++"] }
     ],
-    "level": 3,
+    "level": 4,
     "tags_match": ["neophyte, fantaisiste"]
   },
   {
@@ -43,7 +52,7 @@
       { "label_answer": "anal", "tags": ["anal"] },
       { "label_answer": "genital", "tags": ["genital"] }
     ],
-    "level": 3,
+    "level": 4,
     "tags_match": ["neophyte, realiste"]
   },
   {
@@ -52,16 +61,16 @@
       { "label_answer": "anal", "tags": ["anal"] },
       { "label_answer": "genital", "tags": ["genital"] }
     ],
-    "level": 3,
+    "level": 4,
     "tags_match": ["connaisseur, fantaisiste"]
   },
   {
     "label_question": "On ne se lasse pas du classique! un plaisir en particulier?",
     "responses": [
       { "label_answer": "anal", "tags": ["anal"] },
-      { "label_answer": "genital", "tags": ["genital", "genital++"] }
+      { "label_answer": "genital", "tags": ["genital, genital++"] }
     ],
-    "level": 3,
+    "level": 4,
     "tags_match": ["connaisseur, realiste"]
   },
 
@@ -71,7 +80,7 @@
       { "label_answer": "oui", "tags": ["robotise"] },
       { "label_answer": "non", "tags": ["manuel"] }
     ],
-    "level": 4,
+    "level": 5,
     "tags_match": ["neophyte, fantaisiste, anal"]
   },
   {
@@ -80,7 +89,7 @@
       { "label_answer": "oui", "tags": ["robotise"] },
       { "label_answer": "non", "tags": ["manuel"] }
     ],
-    "level": 4,
+    "level": 5,
     "tags_match": ["neophyte, fantaisiste, genital"]
   },
   {
@@ -89,8 +98,17 @@
       { "label_answer": "Oui, partons à l'aventure!", "tags": ["robotise"] },
       { "label_answer": "Non, merci!", "tags": ["manuel"] }
     ],
-    "level": 4,
+    "level": 5,
     "tags_match": ["neophyte, realiste, genital"]
+  },
+  {
+    "label_question": "Désirez-vous que le sextoy soit robotisé (étant donné que vous débutez, nous ne le recommandons pas)",
+    "responses": [
+      { "label_answer": "Oui, partons à l'aventure!", "tags": ["robotise"] },
+      { "label_answer": "Non, merci!", "tags": ["manuel"] }
+    ],
+    "level": 5,
+    "tags_match": ["neophyte, realiste, anal"]
   },
   {
     "label_question": "Désirez-vous que le sextoy soit robotisé? (Cela ne devrait pas vous effrayer! 😜",
@@ -98,7 +116,7 @@
       { "label_answer": "Oui", "tags": ["robotise"] },
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
-    "level": 4,
+    "level": 5,
     "tags_match": ["connaisseur, fantaisiste, anal"]
   },
   {
@@ -107,7 +125,7 @@
       { "label_answer": "Oui", "tags": ["robotise"] },
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
-    "level": 4,
+    "level": 5,
     "tags_match": ["connaisseur, realiste, genital"]
   },
   {
@@ -116,17 +134,16 @@
       { "label_answer": "Oui", "tags": ["robotise"] },
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
-    "level": 4,
+    "level": 5,
     "tags_match": ["connaisseur, realiste, anal"]
   },
-
   {
     "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
     "responses": [
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["connaisseur, realiste, genital, genital++, robotise"]
   },
   {
@@ -135,7 +152,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["connaisseur, realiste, anal, robotise"]
   },
   {
@@ -144,7 +161,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["connaisseur, fantaisiste, genital, robotise"]
   },
   {
@@ -153,7 +170,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["connaisseur, fantaisiste, anal, robotise"]
   },
   {
@@ -162,7 +179,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["neophyte, realiste, genital, robotise"]
   },
   {
@@ -171,7 +188,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["neophyte, fantaisiste, genital, robotise"]
   },
   {
@@ -180,7 +197,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["neophyte, realiste, anal, robotise"]
   },
   {
@@ -189,7 +206,7 @@
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
-    "level": 5,
+    "level": 6,
     "tags_match": ["neophyte, fantaisiste, anal, robotise"]
   },
 
@@ -199,7 +216,7 @@
       { "label_answer": "fellation", "tags": ["fellation"] },
       { "label_answer": "la pénétration", "tags": ["penetration"] }
     ],
-    "level": 6,
+    "level": 7,
     "tags_match": ["neophyte, realiste, genital, genital++"]
   },
   {
@@ -208,7 +225,7 @@
       { "label_answer": "fellation", "tags": ["fellation"] },
       { "label_answer": "la pénétration", "tags": ["penetration"] }
     ],
-    "level": 6,
+    "level": 7,
     "tags_match": ["neophyte, fantaisiste, genital, genital++"]
   },
   {
@@ -217,7 +234,7 @@
       { "label_answer": "fellation", "tags": ["fellation"] },
       { "label_answer": "la pénétration", "tags": ["penetration"] }
     ],
-    "level": 6,
+    "level": 7,
     "tags_match": ["connaisseur, realiste, genital, genital++"]
   },
   {
@@ -226,7 +243,7 @@
       { "label_answer": "fellation", "tags": ["fellation"] },
       { "label_answer": "la pénétration", "tags": ["penetration"] }
     ],
-    "level": 6,
+    "level": 7,
     "tags_match": ["connaisseur, fantaisiste, genital, genital++"]
   },
   {
@@ -235,7 +252,7 @@
       { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
       { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
     ],
-    "level": 7,
+    "level": 8,
     "tags_match": ["connaisseur, fantaisiste, genital, genital++, penetration"]
   },
   {
@@ -244,7 +261,7 @@
       { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
       { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
     ],
-    "level": 7,
+    "level": 8,
     "tags_match": ["connaisseur, realiste, genital, genital++, penetration"]
   },
   {
@@ -253,7 +270,7 @@
       { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
       { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
     ],
-    "level": 7,
+    "level": 8,
     "tags_match": ["neophyte, fantaisiste, genital, genital++, penetration"]
   },
   {
@@ -262,7 +279,7 @@
       { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
       { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
     ],
-    "level": 7,
+    "level": 8,
     "tags_match": ["neophyte, realiste, genital, genital++, penetration"]
   },
   {
@@ -272,7 +289,7 @@
       { "label_answer": "moyen", "tags": ["moyen"] },
       { "label_answer": "grand", "tags": ["grand"] }
     ],
-    "level": 8,
+    "level": 9,
     "tags_match": [
       "neophyte, connaisseur, realiste, genital, genital++, penetration"
     ]

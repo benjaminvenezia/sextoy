@@ -10,6 +10,7 @@ const QuestionContainer = ({ setQuestion, question }) => {
   let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(', ')}`
 
   const handleClick = (tags) => {
+    console.log('tags', tags)
     tags.forEach((tag) => {
       setTagsNextQuestion([...tagsNextQuestion, tag])
     })
