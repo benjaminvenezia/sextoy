@@ -13,11 +13,11 @@ import axios from 'axios'
 const Question = ({ question, handleClick }) => {
   const questionObj = question?.questions[0]
 
-  //on destructure pas ici
   const level = questionObj?.level
   const label_question = questionObj?.label_question
   const responses = questionObj?.responses
   const tags_question = questionObj?.tags_question
+
   return (
     <Wrapper>
       <h1>{label_question}</h1>

@@ -18,42 +18,18 @@ const QuestionContainer = ({ setQuestion, question }) => {
     console.log(tagsNextQuestion)
   }
 
-  useEffect(() => {
-    callApi(url)
-  }, [tagsNextQuestion])
-
-  const callApi = (url) => {
-    axios.get(url).then((res) => {
-      const question = res.data
-
-      // const questionObj = question?.questions[0]
-
-      // //on destructure pas ici
-      // const level = questionObj?.level
-      // const label_question = questionObj?.label_question
-      // const responses = questionObj?.responses
-      // const tags_question = questionObj?.tags_question
-
-      // console.log('level', level)
-      // console.log('label', label_question)
-
-      // if (!level && !label_question && !responses && !tags_question) {
-      //   console.log('on arrête ici.')
-      // }
-
-      console.log(question)
-
-      setQuestion(question)
-    })
+  const fetchData = async (url) => {
+    const response = await axios.get(url)
+    setQuestion(response.data)
   }
+
+  useEffect(() => {
+    fetchData(url)
+  }, [tagsNextQuestion])
 
   return (
     <Wrapper>
-      {!isOver ? (
-        <Question question={question} handleClick={handleClick} />
-      ) : (
-        <p>On a terminé!</p>
-      )}
+      <Question question={question} handleClick={handleClick} />
     </Wrapper>
   )
 }
