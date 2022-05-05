@@ -4,16 +4,10 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const QuestionContainer = ({ setQuestion, question }) => {
-  // const [question, setQuestion] = useState()
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
-  let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(', ')}`
+  const [isOver, setIsOver] = useState(false)
 
-  // useEffect(() => {
-  //   axios.get(`http://localhost:5004/api/v1/`).then((res) => {
-  //     const questions = res.data
-  //     setQuestion(questions)
-  //   })
-  // }, [])
+  let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(', ')}`
 
   const handleClick = (tags) => {
     tags.forEach((tag) => {
@@ -31,13 +25,35 @@ const QuestionContainer = ({ setQuestion, question }) => {
   const callApi = (url) => {
     axios.get(url).then((res) => {
       const question = res.data
+
+      // const questionObj = question?.questions[0]
+
+      // //on destructure pas ici
+      // const level = questionObj?.level
+      // const label_question = questionObj?.label_question
+      // const responses = questionObj?.responses
+      // const tags_question = questionObj?.tags_question
+
+      // console.log('level', level)
+      // console.log('label', label_question)
+
+      // if (!level && !label_question && !responses && !tags_question) {
+      //   console.log('on arrête ici.')
+      // }
+
+      console.log(question)
+
       setQuestion(question)
     })
   }
 
   return (
     <Wrapper>
-      <Question question={question} handleClick={handleClick} />
+      {!isOver ? (
+        <Question question={question} handleClick={handleClick} />
+      ) : (
+        <p>On a terminé!</p>
+      )}
     </Wrapper>
   )
 }

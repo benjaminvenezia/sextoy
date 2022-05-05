@@ -7,10 +7,12 @@ const QuestionPage = () => {
   const [question, setQuestion] = useState()
 
   useEffect(() => {
-    axios.get(`http://localhost:5004/api/v1/`).then((res) => {
-      const quest = res.data
-      setQuestion(quest)
-    })
+    async function fetchData() {
+      const response = await axios.get(`http://localhost:5004/api/v1/`)
+      setQuestion(response.data)
+    }
+
+    fetchData()
   }, [])
 
   return (
