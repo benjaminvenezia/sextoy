@@ -7,7 +7,7 @@ const getQuestionByTags = async (req, res) => {
   console.log('req query: ', tags)
 
   const questions = await Question.find({
-    tags_question: { $all: tags },
+    tags_match: { $all: tags },
   })
 
   res.status(StatusCodes.OK).json({ questions })

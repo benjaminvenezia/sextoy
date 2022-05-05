@@ -20,16 +20,28 @@ const QuestionContainer = ({ setQuestion, question }) => {
 
   const fetchData = async (url) => {
     const response = await axios.get(url)
+
+    const id = response.data.questions[0]?._id
+
+    if (tagsNextQuestion.length > 1 && !id) {
+      console.log('termine')
+      setIsOver(true)
+    }
+
     setQuestion(response.data)
   }
 
   useEffect(() => {
     fetchData(url)
-  }, [tagsNextQuestion])
+  }, [tagsNextQuestion, isOver])
 
   return (
     <Wrapper>
-      <Question question={question} handleClick={handleClick} />
+      {!isOver ? (
+        <Question question={question} handleClick={handleClick} />
+      ) : (
+        <p>Vous avez finit le quizz.</p>
+      )}
     </Wrapper>
   )
 }

@@ -1,0 +1,65 @@
+[
+  {
+    "label_question": "As-tu déjà utilisé un sextoy?",
+    "responses": [
+      { "label_answer": "oui", "tags": ["connaisseur"] },
+      { "label_answer": "non", "tags": ["neophyte"] }
+    ],
+    "level": 1,
+    "tags_question": [null]
+  },
+  {
+    "label_question": "Il y a un début à tout! Vous souhaitez quelque chose de réaliste ou de fantaisiste ?",
+    "responses": [
+      { "label_answer": "Réaliste", "tags": ["realiste"] },
+      { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
+    ],
+    "level": 2,
+    "tags_question": ["neophyte"]
+  },
+  {
+    "label_question": "Vous êtes connaisseur! Vous souhaitez quelque chose de réaliste ou de fantaisiste ?",
+    "responses": [
+      { "label_answer": "Réaliste", "tags": ["realiste"] },
+      { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
+    ],
+    "level": 2,
+    "tags_question": ["connaisseur"]
+  },
+  {
+    "label_question": "Fantaisiste! Bon choix 😺, un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital"] }
+    ],
+    "level": 3,
+    "tags_question": ["neophyte, fantaisiste"]
+  },
+  {
+    "label_question": "Classique! Un début des plus normal 😺, un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital"] }
+    ],
+    "level": 3,
+    "tags_question": ["neophyte, realiste"]
+  },
+  {
+    "label_question": "Changeons du classique! un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital"] }
+    ],
+    "level": 3,
+    "tags_question": ["connaisseur", "fantaisiste"]
+  },
+  {
+    "label_question": "On ne se lasse pas du classique! un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital"] }
+    ],
+    "level": 3,
+    "tags_question": ["connaisseur", "realiste"]
+  }
+]

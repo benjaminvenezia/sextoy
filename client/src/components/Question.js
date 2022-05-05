@@ -16,7 +16,7 @@ const Question = ({ question, handleClick }) => {
   const level = questionObj?.level
   const label_question = questionObj?.label_question
   const responses = questionObj?.responses
-  const tags_question = questionObj?.tags_question
+  const tags_match = questionObj?.tags_match
 
   return (
     <Wrapper>

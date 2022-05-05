@@ -14,14 +14,30 @@ const QuestionSchema = new mongoose.Schema({
       },
       tags: {
         type: [String],
-        required: [true, 'Merci de préciser les tags lié à cette réponse'],
+        // enum: [
+        //   'connaisseur',
+        //   'neophyte',
+        //   'realiste',
+        //   'fantaisiste',
+        //   'anal',
+        //   'genital',
+        //   'robotise',
+        //   'manuel',
+        //   'vibration',
+        //   'sans vibration',
+        //   'fellation',
+        //   'penetration',
+        //   'penetration_anale',
+        //   'penetration_vaginale',
+        // ],
+        // required: [true, 'Merci de préciser les tags lié à cette réponse'],
       },
     },
   ],
   level: {
     type: Number,
   },
-  tags_question: {
+  tags_match: {
     type: [String],
   },
 })

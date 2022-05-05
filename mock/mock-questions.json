@@ -6,45 +6,275 @@
       { "label_answer": "non", "tags": ["neophyte"] }
     ],
     "level": 1,
-    "tags_question": [null]
+    "tags_match": [null]
   },
+
   {
-    "label_question": "A quelle fréquence tu l'utilises?",
+    "label_question": "Il y a un début à tout! Vous souhaitez quelque chose de réaliste ou de fantaisiste ?",
     "responses": [
-      { "label_answer": "Régulièrement", "tags": ["regulier"] },
-      { "label_answer": "Occasionnellement", "tags": ["occasionnel"] },
-      { "label_answer": "Rarement", "tags": ["rarement"] }
+      { "label_answer": "Réaliste", "tags": ["realiste"] },
+      { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
     ],
     "level": 2,
-    "tags_question": ["connaisseur"]
+    "tags_match": ["neophyte"]
   },
   {
-    "label_question": "Tu es débutant, voudrais-tu quelques chose de fun?",
+    "label_question": "Vous êtes connaisseur! Vous souhaitez quelque chose de réaliste ou de fantaisiste ?",
     "responses": [
-      { "label_answer": "oui", "tags": ["fun"] },
-      { "label_answer": "non", "tags": ["realiste"] }
+      { "label_answer": "Réaliste", "tags": ["realiste"] },
+      { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
+    ],
+    "level": 2,
+    "tags_match": ["connaisseur"]
+  },
+
+  {
+    "label_question": "Fantaisiste! Bon choix 😺, un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital", "genital++"] }
     ],
     "level": 3,
-    "tags_question": ["neophyte"]
+    "tags_match": ["neophyte, fantaisiste"]
   },
   {
-    "label_question": "Tu et débutant et tu désires du fun! Plutôt coloré?",
+    "label_question": "Classique! Un début des plus normal 😺, un plaisir en particulier?",
     "responses": [
-      { "label_answer": "oui", "tags": ["coloré"] },
-      { "label_answer": "non", "tags": ["sobre"] }
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital"] }
+    ],
+    "level": 3,
+    "tags_match": ["neophyte, realiste"]
+  },
+  {
+    "label_question": "Changeons du classique! un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital"] }
+    ],
+    "level": 3,
+    "tags_match": ["connaisseur, fantaisiste"]
+  },
+  {
+    "label_question": "On ne se lasse pas du classique! un plaisir en particulier?",
+    "responses": [
+      { "label_answer": "anal", "tags": ["anal"] },
+      { "label_answer": "genital", "tags": ["genital", "genital++"] }
+    ],
+    "level": 3,
+    "tags_match": ["connaisseur, realiste"]
+  },
+
+  {
+    "label_question": "Désirez-vous que le sextoy soit robotisé?",
+    "responses": [
+      { "label_answer": "oui", "tags": ["robotise"] },
+      { "label_answer": "non", "tags": ["manuel"] }
     ],
     "level": 4,
-    "tags_question": ["neophyte, fun"]
+    "tags_match": ["neophyte, fantaisiste, anal"]
   },
   {
-    "label_question": "Pas de couleur, c'est compris! Quelle taille pour ton sextoy?",
+    "label_question": "Désirez-vous que le sextoy soit robotisé?",
     "responses": [
-      { "label_answer": "très grand!", "tags": ["xl"] },
-      { "label_answer": "grand!", "tags": ["l"] },
-      { "label_answer": "moyen", "tags": ["m"] },
-      { "label_answer": "petit", "tags": ["s"] }
+      { "label_answer": "oui", "tags": ["robotise"] },
+      { "label_answer": "non", "tags": ["manuel"] }
+    ],
+    "level": 4,
+    "tags_match": ["neophyte, fantaisiste, genital"]
+  },
+  {
+    "label_question": "Désirez-vous que le sextoy soit robotisé (étant donné que vous débutez, nous ne le recommandons pas)",
+    "responses": [
+      { "label_answer": "Oui, partons à l'aventure!", "tags": ["robotise"] },
+      { "label_answer": "Non, merci!", "tags": ["manuel"] }
+    ],
+    "level": 4,
+    "tags_match": ["neophyte, realiste, genital"]
+  },
+  {
+    "label_question": "Désirez-vous que le sextoy soit robotisé? (Cela ne devrait pas vous effrayer! 😜",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 4,
+    "tags_match": ["connaisseur, fantaisiste, anal"]
+  },
+  {
+    "label_question": "Désirez-vous que le sextoy soit robotisé? (Cela ne devrait pas vous effrayer! 😜",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 4,
+    "tags_match": ["connaisseur, realiste, genital"]
+  },
+  {
+    "label_question": "Désirez-vous que le sextoy soit robotisé? (Cela ne devrait pas vous effrayer! 😜",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 4,
+    "tags_match": ["connaisseur, realiste, anal"]
+  },
+
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
     "level": 5,
-    "tags_question": ["neophyte, fun, sobre"]
+    "tags_match": ["connaisseur, realiste, genital, genital++, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["connaisseur, realiste, anal, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["connaisseur, fantaisiste, genital, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["connaisseur, fantaisiste, anal, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["neophyte, realiste, genital, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["neophyte, fantaisiste, genital, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["neophyte, realiste, anal, robotise"]
+  },
+  {
+    "label_question": "Vous êtes aventureux, désirez-vous des vibrations?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["vibration"] },
+      { "label_answer": "Non", "tags": ["sans-vibration"] }
+    ],
+    "level": 5,
+    "tags_match": ["neophyte, fantaisiste, anal, robotise"]
+  },
+
+  {
+    "label_question": "Quel plaisir préfères-tu?",
+    "responses": [
+      { "label_answer": "fellation", "tags": ["fellation"] },
+      { "label_answer": "la pénétration", "tags": ["penetration"] }
+    ],
+    "level": 6,
+    "tags_match": ["neophyte, realiste, genital, genital++"]
+  },
+  {
+    "label_question": "Quel plaisir préfères-tu?",
+    "responses": [
+      { "label_answer": "fellation", "tags": ["fellation"] },
+      { "label_answer": "la pénétration", "tags": ["penetration"] }
+    ],
+    "level": 6,
+    "tags_match": ["neophyte, fantaisiste, genital, genital++"]
+  },
+  {
+    "label_question": "Quel plaisir préfères-tu?",
+    "responses": [
+      { "label_answer": "fellation", "tags": ["fellation"] },
+      { "label_answer": "la pénétration", "tags": ["penetration"] }
+    ],
+    "level": 6,
+    "tags_match": ["connaisseur, realiste, genital, genital++"]
+  },
+  {
+    "label_question": "Quel plaisir préfères-tu?",
+    "responses": [
+      { "label_answer": "fellation", "tags": ["fellation"] },
+      { "label_answer": "la pénétration", "tags": ["penetration"] }
+    ],
+    "level": 6,
+    "tags_match": ["connaisseur, fantaisiste, genital, genital++"]
+  },
+  {
+    "label_question": "Penetration, c'est noté! Quel type de pénétration?",
+    "responses": [
+      { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
+      { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
+    ],
+    "level": 7,
+    "tags_match": ["connaisseur, fantaisiste, genital, genital++, penetration"]
+  },
+  {
+    "label_question": "Penetration, c'est noté! Quel type de pénétration?",
+    "responses": [
+      { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
+      { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
+    ],
+    "level": 7,
+    "tags_match": ["connaisseur, realiste, genital, genital++, penetration"]
+  },
+  {
+    "label_question": "Penetration, c'est noté! Quel type de pénétration?",
+    "responses": [
+      { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
+      { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
+    ],
+    "level": 7,
+    "tags_match": ["neophyte, fantaisiste, genital, genital++, penetration"]
+  },
+  {
+    "label_question": "Penetration, c'est noté! Quel type de pénétration?",
+    "responses": [
+      { "label_answer": "pénétration anale", "tags": ["penetration-anale"] },
+      { "label_answer": "pénétration vaginale", "tags": ["penetration-vaginale"] }
+    ],
+    "level": 7,
+    "tags_match": ["neophyte, realiste, genital, genital++, penetration"]
+  },
+  {
+    "label_question": "Quelle taille pour ton objet?",
+    "responses": [
+      { "label_answer": "petit", "tags": ["petit"] },
+      { "label_answer": "moyen", "tags": ["moyen"] },
+      { "label_answer": "grand", "tags": ["grand"] }
+    ],
+    "level": 8,
+    "tags_match": [
+      "neophyte, connaisseur, realiste, genital, genital++, penetration"
+    ]
   }
 ]
