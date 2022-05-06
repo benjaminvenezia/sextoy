@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Question } from '.'
+import { Question, SextoyCategory } from '.'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -15,8 +15,6 @@ const QuestionContainer = ({ setQuestion, question }) => {
     tags.forEach((tag) => {
       setTagsNextQuestion([...tagsNextQuestion, tag])
     })
-
-    console.log(url)
   }
 
   const fetchData = async (url) => {
@@ -40,7 +38,7 @@ const QuestionContainer = ({ setQuestion, question }) => {
       {!isOver ? (
         <Question question={question} handleClick={handleClick} />
       ) : (
-        <p>Vous avez finit le quizz.</p>
+        <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
       )}
     </Wrapper>
   )
