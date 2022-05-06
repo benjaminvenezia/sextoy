@@ -9,12 +9,12 @@
     "tags_match": [null]
   },
   {
-    "label_question": "Il y a un début à tout! Vous souhaitez quelque chose de réaliste ou de fantaisiste ?",
+    "label_question": "Quelle partie de votre intimité souhaitez-vous stimuler?",
     "responses": [
-      { "label_answer": "Réaliste", "tags": ["realiste"] },
-      { "label_answer": "Fantaisiste", "tags": ["fantaisiste"] }
+      { "label_answer": "Mon pénis", "tags": ["penis"] },
+      { "label_answer": "Ma Prostate", "tags": ["prostate"] }
     ],
     "level": 2,
-    "tags_match": ["neophyte"]
+    "tags_match": ["homme"]
   }
 ]

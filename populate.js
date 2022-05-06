@@ -21,8 +21,22 @@ const start = async () => {
       await readFile(new URL('./mock/mock-questions.json', import.meta.url))
     )
 
+    const questionHommePenisJson = JSON.parse(
+      await readFile(
+        new URL('./mock/mock-questions-homme-penis.json', import.meta.url)
+      )
+    )
+
+    const questionHommeProstateJson = JSON.parse(
+      await readFile(
+        new URL('./mock/mock-questions-homme-prostate.json', import.meta.url)
+      )
+    )
+
     await Sextoy.create(jsonSextoy)
     await Question.create(questionJson)
+    await Question.create(questionHommePenisJson)
+    await Question.create(questionHommeProstateJson)
 
     console.log('Table sextoy réinitialisée et remplie!')
     console.log('Table question réinitialisée et remplie!')
