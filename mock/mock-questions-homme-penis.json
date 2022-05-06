@@ -6,7 +6,7 @@
       { "label_answer": "Non", "tags": ["fantaisie"] }
     ],
     "level": 3,
-    "tags_match": ["homme, penis"]
+    "tags_match": ["homme", "penis"]
   },
 
   {
@@ -16,7 +16,7 @@
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, realiste"]
+    "tags_match": ["homme", "penis", "realiste"]
   },
   {
     "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
@@ -25,7 +25,7 @@
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
     "level": 5,
-    "tags_match": ["homme, penis, realiste, robotise"]
+    "tags_match": ["homme", "penis", "realiste", "robotise"]
   },
   {
     "label_question": "Manuel, super! Voudrais-tu que le sextoy simule une fellation?",
@@ -34,7 +34,7 @@
       { "label_answer": "Non", "tags": ["penetration"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, realiste, manuel"]
+    "tags_match": ["homme", "penis", "realiste", "manuel"]
   },
   {
     "label_question": "Voudrais-tu que le sextoy simule une fellation?",
@@ -43,7 +43,7 @@
       { "label_answer": "Non", "tags": ["penetration"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, realiste, robotise, vibration"]
+    "tags_match": ["homme", "penis", "realiste", "robotise", "vibration"]
   },
   {
     "label_question": "Sans-vibration, noté chef! Voudrais-tu que le sextoy simule une fellation?",
@@ -52,7 +52,7 @@
       { "label_answer": "Non", "tags": ["penetration"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, realiste, robotise, sans-vibration"]
+    "tags_match": ["homme", "penis", "realiste", "robotise", "sans-vibration"]
   },
   {
     "label_question": "Quelle type de pénétration?",
@@ -62,7 +62,14 @@
       { "label_answer": "Je veux tout!", "tags": ["penetration-vaginale-anale"] }
     ],
     "level": 6,
-    "tags_match": ["homme, penis, realiste, robotise, sans-vibration, penetration"]
+    "tags_match": [
+      "homme",
+      "penis",
+      "realiste",
+      "robotise",
+      "sans-vibration",
+      "penetration"
+    ]
   },
   {
     "label_question": "Quel type de pénétration??",
@@ -72,7 +79,14 @@
       { "label_answer": "Je veux tout!", "tags": ["penetration-vaginale-anale"] }
     ],
     "level": 6,
-    "tags_match": ["homme, penis, realiste, robotise, vibration, penetration"]
+    "tags_match": [
+      "homme",
+      "penis",
+      "realiste",
+      "robotise",
+      "vibration",
+      "penetration"
+    ]
   },
   {
     "label_question": "quelle préférence pour la pénétration?",
@@ -82,7 +96,7 @@
       { "label_answer": "Je veux tout!", "tags": ["penetration-vaginale-anale"] }
     ],
     "level": 5,
-    "tags_match": ["homme, penis, realiste, manuel, penetration"]
+    "tags_match": ["homme", "penis", "realiste", "manuel", "penetration"]
   },
 
   {
@@ -92,7 +106,7 @@
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, fantaisie"]
+    "tags_match": ["homme", "penis", "fantaisie"]
   },
   {
     "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
@@ -101,7 +115,7 @@
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
     "level": 5,
-    "tags_match": ["homme, penis, fantaisie, robotise"]
+    "tags_match": ["homme", "penis", "fantaisie", "robotise"]
   },
   {
     "label_question": "Manuel, super! Voudrais-tu que le sextoy simule une fellation?",
@@ -110,7 +124,7 @@
       { "label_answer": "Non", "tags": ["penetration"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, fantaisie, manuel"]
+    "tags_match": ["homme", "penis", "fantaisie", "manuel"]
   },
   {
     "label_question": "Voudrais-tu que le sextoy simule une fellation?",
@@ -119,7 +133,7 @@
       { "label_answer": "Non", "tags": ["penetration"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, fantaisie, robotise, vibration"]
+    "tags_match": ["homme", "penis", "fantaisie", "robotise", "vibration"]
   },
   {
     "label_question": "Sans-vibration, noté chef! Voudrais-tu que le sextoy simule une fellation?",
@@ -128,7 +142,7 @@
       { "label_answer": "Non", "tags": ["penetration"] }
     ],
     "level": 4,
-    "tags_match": ["homme, penis, fantaisie, robotise, sans-vibration"]
+    "tags_match": ["homme", "penis", "fantaisie", "robotise", "sans-vibration"]
   },
   {
     "label_question": "Quelle type de pénétration?",
@@ -137,7 +151,14 @@
       { "label_answer": "Pénétration génitale", "tags": ["penetration-vaginale"] }
     ],
     "level": 6,
-    "tags_match": ["homme, penis, fantaisie, robotise, sans-vibration, penetration"]
+    "tags_match": [
+      "homme",
+      "penis",
+      "fantaisie",
+      "robotise",
+      "sans-vibration",
+      "penetration"
+    ]
   },
   {
     "label_question": "Quel type de pénétration??",
@@ -146,7 +167,14 @@
       { "label_answer": "Pénétration génitale", "tags": ["penetration-vaginale"] }
     ],
     "level": 6,
-    "tags_match": ["homme, penis, fantaisie, robotise, vibration, penetration"]
+    "tags_match": [
+      "homme",
+      "penis",
+      "fantaisie",
+      "robotise",
+      "vibration",
+      "penetration"
+    ]
   },
   {
     "label_question": "Vous vous orientez gentillement vers les vaginettes, quelle préférence pour la pénétration?",
@@ -155,6 +183,6 @@
       { "label_answer": "Pénétration génitale", "tags": ["penetration-vaginale"] }
     ],
     "level": 5,
-    "tags_match": ["homme, penis, fantaisie, manuel, penetration"]
+    "tags_match": ["homme", "penis", "fantaisie", "manuel", "penetration"]
   }
 ]

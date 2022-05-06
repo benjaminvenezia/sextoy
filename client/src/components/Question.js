@@ -21,7 +21,6 @@ const Question = ({ question, handleClick }) => {
   return (
     <Wrapper>
       <h1>{label_question}</h1>
-
       {responses?.map((r) => {
         if (r?.disabled) {
           return (

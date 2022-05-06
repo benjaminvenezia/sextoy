@@ -4,7 +4,6 @@ import mongoose from 'mongoose'
 
 const getSextoyByTags = async (req, res) => {
   const { tags } = req.query
-  console.log('req query: ', typeof tags)
 
   const tagsArray = tags.split(', ')
 

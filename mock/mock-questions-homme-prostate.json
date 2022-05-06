@@ -6,7 +6,7 @@
       { "label_answer": "Non", "tags": ["fantaisie"] }
     ],
     "level": 3,
-    "tags_match": ["homme, prostate"]
+    "tags_match": ["homme", "prostate"]
   },
   {
     "label_question": "Voulez-vous qu'il soit robotisé?",
@@ -15,7 +15,7 @@
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
     "level": 4,
-    "tags_match": ["homme, prostate, realiste"]
+    "tags_match": ["homme", "prostate", "realiste"]
   },
   {
     "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
@@ -24,7 +24,7 @@
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
     "level": 5,
-    "tags_match": ["homme, prostate, realiste, robotise"]
+    "tags_match": ["homme", "prostate", "realiste", "robotise"]
   },
   {
     "label_question": "Quelle taille pour cet objet-robotisé vibrant?",
@@ -34,7 +34,7 @@
       { "label_answer": "grand", "tags": ["grand"] }
     ],
     "level": 6,
-    "tags_match": ["homme, prostate, realiste, robotise, vibration"]
+    "tags_match": ["homme", "prostate", "realiste", "robotise", "vibration"]
   },
   {
     "label_question": "Quelle taille pour cet objet-robotisé non vibrant?",
@@ -44,7 +44,7 @@
       { "label_answer": "grand", "tags": ["grand"] }
     ],
     "level": 6,
-    "tags_match": ["homme, prostate, realiste, robotise, sans-vibration"]
+    "tags_match": ["homme", "prostate", "realiste", "robotise", "sans-vibration"]
   },
   {
     "label_question": "Je crois savoir ce qu'il te faut! Quelle taille pour cet objet?",
@@ -54,7 +54,7 @@
       { "label_answer": "grand", "tags": ["grand"] }
     ],
     "level": 6,
-    "tags_match": ["homme, prostate, realiste, manuel"]
+    "tags_match": ["homme", "prostate", "realiste", "manuel"]
   },
 
   {
@@ -64,7 +64,7 @@
       { "label_answer": "Non", "tags": ["manuel"] }
     ],
     "level": 4,
-    "tags_match": ["homme, prostate, fantaisie"]
+    "tags_match": ["homme", "prostate", "fantaisie"]
   },
   {
     "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
@@ -73,7 +73,7 @@
       { "label_answer": "Non", "tags": ["sans-vibration"] }
     ],
     "level": 5,
-    "tags_match": ["homme, prostate, fantaisie, robotise"]
+    "tags_match": ["homme", "prostate", "fantaisie", "robotise"]
   },
   {
     "label_question": "Quelle taille pour cet objet-robotisé vibrant?",
@@ -83,7 +83,7 @@
       { "label_answer": "grand", "tags": ["grand"] }
     ],
     "level": 6,
-    "tags_match": ["homme, prostate, fantaisie, robotise, vibration"]
+    "tags_match": ["homme", "prostate", "fantaisie", "robotise", "vibration"]
   },
   {
     "label_question": "Quelle taille pour cet objet-robotisé non vibrant?",
@@ -93,7 +93,7 @@
       { "label_answer": "grand", "tags": ["grand"] }
     ],
     "level": 6,
-    "tags_match": ["homme, prostate, fantaisie, robotise, sans-vibration"]
+    "tags_match": ["homme", "prostate", "fantaisie", "robotise", "sans-vibration"]
   },
   {
     "label_question": "Je crois savoir ce qu'il te faut! Quelle taille pour cet objet?",
@@ -103,6 +103,6 @@
       { "label_answer": "grand", "tags": ["grand"] }
     ],
     "level": 6,
-    "tags_match": ["homme, prostate, fantaisie, manuel"]
+    "tags_match": ["homme", "prostate", "fantaisie", "manuel"]
   }
 ]

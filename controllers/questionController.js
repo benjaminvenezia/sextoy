@@ -4,13 +4,21 @@ import mongoose from 'mongoose'
 
 const getQuestionByTags = async (req, res) => {
   const { tags } = req.query
-  console.log('req query: ', tags)
+  let tagsArray = []
+
+  tagsArray = tags.split(', ')
 
   const questions = await Question.find({
-    tags_match: { $all: tags },
+    tags_match: { $size: tagsArray.length, $all: tagsArray },
   })
 
   res.status(StatusCodes.OK).json({ questions })
 }
 
-export { getQuestionByTags }
+const getFirstQuestion = async (req, res) => {
+  const questions = await Question.find({ level: 1 })
+
+  res.status(StatusCodes.OK).json({ questions })
+}
+
+export { getQuestionByTags, getFirstQuestion }

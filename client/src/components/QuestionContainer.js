@@ -12,13 +12,11 @@ const QuestionContainer = ({ setQuestion, question }) => {
   )}`
 
   const handleClick = (tags) => {
-    console.log('tags', tags)
     tags.forEach((tag) => {
       setTagsNextQuestion([...tagsNextQuestion, tag])
     })
 
     console.log(url)
-    console.log(tagsNextQuestion)
   }
 
   const fetchData = async (url) => {
@@ -27,7 +25,6 @@ const QuestionContainer = ({ setQuestion, question }) => {
     const id = response.data.questions[0]?._id
 
     if (tagsNextQuestion.length > 1 && !id) {
-      console.log('termine')
       setIsOver(true)
     }
 
