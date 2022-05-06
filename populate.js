@@ -13,8 +13,10 @@ const start = async () => {
     await Sextoy.deleteMany()
     await Question.deleteMany()
 
-    const jsonSextoy = JSON.parse(
-      await readFile(new URL('./mock/mock-sextoys.json', import.meta.url))
+    const jsonSextoyPlugs = JSON.parse(
+      await readFile(
+        new URL('./mock/sextoysCategories/mock-plugs.json', import.meta.url)
+      )
     )
 
     const questionJson = JSON.parse(
@@ -33,7 +35,7 @@ const start = async () => {
       )
     )
 
-    await Sextoy.create(jsonSextoy)
+    await Sextoy.create(jsonSextoyPlugs)
     await Question.create(questionJson)
     await Question.create(questionHommePenisJson)
     await Question.create(questionHommeProstateJson)

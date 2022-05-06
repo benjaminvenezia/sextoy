@@ -27,26 +27,6 @@
     "tags_match": ["homme, penis, realiste, robotise"]
   },
   {
-    "label_question": "Quelle taille pour cet objet-robotisé vibrant?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": ["homme, penis, realiste, robotise, vibration"]
-  },
-  {
-    "label_question": "Quelle taille pour cet objet-robotisé non vibrant?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": ["homme, penis, realiste, robotise, sans-vibration"]
-  },
-  {
     "label_question": "Manuel, super! Voudrais-tu que le sextoy simule une fellation?",
     "responses": [
       { "label_answer": "Oui", "tags": ["fellation"] },
@@ -56,14 +36,40 @@
     "tags_match": ["homme, penis, realiste, manuel"]
   },
   {
-    "label_question": "Très bien, Nous allons chercher cette superbe paires de lèvres réaliste pour vous, puis-je vous demander la taille de l'objet?",
+    "label_question": "Voudrais-tu que le sextoy simule une fellation?",
     "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
+      { "label_answer": "Oui", "tags": ["fellation"] },
+      { "label_answer": "Non", "tags": ["penetration"] }
     ],
-    "level": 5,
-    "tags_match": ["homme, penis, realiste, manuel, fellation"]
+    "level": 4,
+    "tags_match": ["homme, penis, realiste, robotise, vibration"]
+  },
+  {
+    "label_question": "Sans-vibration, noté chef! Voudrais-tu que le sextoy simule une fellation?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["fellation"] },
+      { "label_answer": "Non", "tags": ["penetration"] }
+    ],
+    "level": 4,
+    "tags_match": ["homme, penis, realiste, robotise, sans-vibration"]
+  },
+  {
+    "label_question": "Quelle type de pénétration?",
+    "responses": [
+      { "label_answer": "Pénétration anale", "tags": ["penetration-anale"] },
+      { "label_answer": "Pénétration génitale", "tags": ["penetration-vaginale"] }
+    ],
+    "level": 6,
+    "tags_match": ["homme, penis, realiste, robotise, sans-vibration, penetration"]
+  },
+  {
+    "label_question": "Quel type de pénétration??",
+    "responses": [
+      { "label_answer": "Pénétration anale", "tags": ["penetration-anale"] },
+      { "label_answer": "Pénétration génitale", "tags": ["penetration-vaginale"] }
+    ],
+    "level": 6,
+    "tags_match": ["homme, penis, realiste, robotise, vibration, penetration"]
   },
   {
     "label_question": "Vous vous orientez gentillement vers les vaginettes, quelle préférence pour la pénétration?",
@@ -73,116 +79,5 @@
     ],
     "level": 5,
     "tags_match": ["homme, penis, realiste, manuel, penetration"]
-  },
-  {
-    "label_question": "Je crois savoir ce qu'il te faut! Quelle taille pour cet objet?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": ["homme, penis, realiste, manuel, penetration, penetration-anale"]
-  },
-  {
-    "label_question": "Je crois savoir ce qu'il te faut! Quelle taille pour cet objet?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": [
-      "homme, penis, realiste, manuel, penetration, penetration-vaginale"
-    ]
-  },
-
-  {
-    "label_question": "Vous souhaitez un sextoy réaliste à destination de votre pénis, voulez-vous qu'il soit robotisé?",
-    "responses": [
-      { "label_answer": "Oui", "tags": ["robotise"] },
-      { "label_answer": "Non", "tags": ["manuel"] }
-    ],
-    "level": 4,
-    "tags_match": ["homme, penis, fantaisie"]
-  },
-  {
-    "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
-    "responses": [
-      { "label_answer": "Oui", "tags": ["vibration"] },
-      { "label_answer": "Non", "tags": ["sans-vibration"] }
-    ],
-    "level": 5,
-    "tags_match": ["homme, penis, fantaisie, robotise"]
-  },
-  {
-    "label_question": "Quelle taille pour cet objet-robotisé vibrant?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": ["homme, penis, fantaisie, robotise, vibration"]
-  },
-  {
-    "label_question": "Quelle taille pour cet objet-robotisé non vibrant?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": ["homme, penis, fantaisie, robotise, sans-vibration"]
-  },
-  {
-    "label_question": "Manuel, super! Voudrais-tu que le sextoy simule une fellation?",
-    "responses": [
-      { "label_answer": "Oui", "tags": ["fellation"] },
-      { "label_answer": "Non", "tags": ["penetration"] }
-    ],
-    "level": 4,
-    "tags_match": ["homme, penis, fantaisie, manuel"]
-  },
-  {
-    "label_question": "Très bien, Nous allons chercher cette superbe paires de lèvres réaliste pour vous, puis-je vous demander la taille de l'objet?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 5,
-    "tags_match": ["homme, penis, fantaisie, manuel, fellation"]
-  },
-  {
-    "label_question": "Vous vous orientez gentillement vers les vaginettes, quelle préférence pour la pénétration?",
-    "responses": [
-      { "label_answer": "Pénétration anale", "tags": ["penetration-anale"] },
-      { "label_answer": "Pénétration génitale", "tags": ["penetration-vaginale"] }
-    ],
-    "level": 5,
-    "tags_match": ["homme, penis, fantaisie, manuel, penetration"]
-  },
-  {
-    "label_question": "Je crois savoir ce qu'il te faut! Quelle taille pour cet objet?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": ["homme, penis, fantaisie, manuel, penetration, penetration-anale"]
-  },
-  {
-    "label_question": "Je crois savoir ce qu'il te faut! Quelle taille pour cet objet?",
-    "responses": [
-      { "label_answer": "petit", "tags": ["petit"] },
-      { "label_answer": "moyen", "tags": ["moyen"] },
-      { "label_answer": "grand", "tags": ["grand"] }
-    ],
-    "level": 6,
-    "tags_match": [
-      "homme, penis, fantaisie, manuel, penetration, penetration-vaginale"
-    ]
   }
 ]
