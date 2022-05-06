@@ -7,7 +7,9 @@ const QuestionContainer = ({ setQuestion, question }) => {
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
   const [isOver, setIsOver] = useState(false)
 
-  let url = `http://localhost:5004/api/v1/tags?tags=${tagsNextQuestion.join(', ')}`
+  let url = `http://localhost:5004/api/v1/question/tags?tags=${tagsNextQuestion.join(
+    ', '
+  )}`
 
   const handleClick = (tags) => {
     console.log('tags', tags)

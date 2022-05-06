@@ -2,8 +2,8 @@
   {
     "category": "chapelet",
     "name": "Chapelet F",
-    "description": "Les fucks machine sont à destination des connaisseurs qui veulent se simplifier la vie.",
-    "tags": ["homme", "prostate", "fantaisie", "manuel", "petit"],
+    "description": "une catégorie de chapelets",
+    "tags_match": ["homme", "prostate", "fantaisie", "manuel", "petit"],
     "links_buy": []
   }
 ]

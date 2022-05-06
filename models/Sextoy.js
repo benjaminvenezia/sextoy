@@ -22,7 +22,7 @@ const SextoySchema = new mongoose.Schema({
     type: String,
     required: [true, 'Merci de donner une description au sextoy'],
   },
-  tags: {
+  tags_match: {
     type: [String],
   },
   links_buy: {
