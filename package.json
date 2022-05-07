@@ -5,7 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-server": "npm install",
+    "install-dependencies": " npm run install-client && npm run install-server ",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build-client",
+    "server": "nodemon server --ignore client",
+    "client": "npm start --prefix client",
     "start": "nodemon server",
     "populate": "node populate.js"
   },
