@@ -9,7 +9,7 @@ const getQuestionByTags = async (req, res) => {
   tagsArray = tags.split(', ')
 
   const questions = await Question.find({
-    tags_match: { $size: tagsArray.length, $all: tagsArray },
+    tags_match: { $size: tagsArray.length, $all: tagsArray }, //size is important to return exactly the good question without bug.
   })
 
   res.status(StatusCodes.OK).json({ questions })
