@@ -9,11 +9,13 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Navbar />
-        <Routes>
+        <Landing />
+        <QuestionPage />
+        {/* <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/questions" element={<QuestionPage />} />
           <Route path="*" element={<ErrorPage />} />
-        </Routes>
+        </Routes> */}
       </BrowserRouter>
     </div>
   )

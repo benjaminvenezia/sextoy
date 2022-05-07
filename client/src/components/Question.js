@@ -42,6 +42,8 @@ const Question = ({ question, handleClick }) => {
 
 const Wrapper = styled.div`
   padding: 20px;
+  border-radius: 2.5rem;
+  box-shadow: 1px 1px 15px black;
 `
 
 export default Question

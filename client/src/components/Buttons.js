@@ -12,12 +12,13 @@ export const DefaultButton = styled.button`
 `
 
 export const HipsterButton = styled(DefaultButton)`
-  width: 150px;
   background: transparent;
-  color: ${(props) => (props.disabled ? 'gray' : 'blue')};
-  border: ${(props) => (props.disabled ? '1px solid gray' : '1px solid blue')};
+  color: ${(props) => (props.disabled ? 'gray' : 'black')};
+  border: ${(props) => (props.disabled ? '1px solid gray' : '1px solid black')};
 
   padding: 1rem;
+  min-height: 200px;
+  width: 200px;
   display: inline-block;
   margin-right: 1rem;
 

@@ -94,7 +94,6 @@ h5 {
   font-family: var(--headingFont);
   font-weight: 400;
   line-height: 1.3;
-  text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
 

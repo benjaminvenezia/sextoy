@@ -21,12 +21,20 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
   }, [])
 
   return (
-    <div>
-      <p>{categories?.count} catégorie de sextoy trouvée!</p>
-      {categories?.sextoys.map((category) => {
-        return <SexToyCategoryCard key={category._id} category={category} />
-      })}
-    </div>
+    <Wrapper>
+      {categories?.count > 0 ? (
+        ((<p>{categories?.count} catégorie de sextoy trouvée!</p>),
+        categories?.sextoys.map((category) => {
+          return <SexToyCategoryCard key={category._id} category={category} />
+        }))
+      ) : (
+        <p>Malheureusement, aucune catégorie n'a matché avec vos conditions! 🥺</p>
+      )}
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  padding: 2rem;
+`
 export default SextoyCategory
