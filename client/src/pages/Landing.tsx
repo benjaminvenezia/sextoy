@@ -6,47 +6,36 @@ const Landing = () => {
   const { toggleWelcome, hello } = useAppContext()
   return (
     <Wrapper>
-      <h1>Desyr</h1>
-      {hello ? <p>Bienvenue!</p> : <p>Pas hello :/</p>}
-      <button onClick={toggleWelcome}>Context</button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        laboriosam commodi assumenda tenetur consequatur alias rerum officiis modi
-        tempora soluta? Nam pariatur rerum quibusdam dicta natus sapiente commodi
-        consequatur ratione.
-      </p>
-      <Logo />
+      <div className="page">
+        <h1>Desyr</h1>
+        {hello ? <p>Bienvenue!</p> : <p>Pas hello :/</p>}
+        <button onClick={toggleWelcome}>Context</button>
+        <p>
+          Bienvenue sur Desyr, ce site vous permettra de trouver la catégorie de
+          Sextoy qui vous convient!
+        </p>
+        {/* <Logo /> */}
+      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.main`
-  nav {
-    width: var(--fluid-width);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    height: var(--nav-height);
-    display: flex;
-    align-items: center;
-  }
-  .page {
-    min-height: calc(100vh - var(--nav-height));
-    display: grid;
-    align-items: center;
-    margin-top: -3rem;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
   h1 {
     font-weight: 700;
+    color: var(--primary-50);
     span {
-      color: var(--primary-500);
+      color: var(--primary-50);
     }
   }
   p {
-    color: var(--grey-600);
+    color: var(--primary-50);
   }
-  .main-img {
-    display: none;
-  }
+
   @media (min-width: 992px) {
     .page {
       grid-template-columns: 1fr 1fr;

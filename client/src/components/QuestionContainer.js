@@ -43,7 +43,7 @@ const QuestionContainer = ({ setQuestion, question }) => {
 }
 
 const Wrapper = styled.div`
-  background-color: white;
+  background-color: black;
   border-radius: 2.5rem;
   width: 50%;
   margin: 100px auto;

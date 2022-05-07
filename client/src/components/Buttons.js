@@ -13,8 +13,8 @@ export const DefaultButton = styled.button`
 
 export const HipsterButton = styled(DefaultButton)`
   background: transparent;
-  color: ${(props) => (props.disabled ? 'gray' : 'black')};
-  border: ${(props) => (props.disabled ? '1px solid gray' : '1px solid black')};
+  color: ${(props) => (props.disabled ? 'gray' : 'white')};
+  border: ${(props) => (props.disabled ? '1px solid gray' : '1px solid white')};
 
   padding: 1rem;
   min-height: 200px;
