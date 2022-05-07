@@ -4,6 +4,11 @@
     "name": "Chapelet F",
     "description": "une catégorie de chapelets",
     "tags_match": ["homme", "prostate", "fantaisie", "manuel", "petit"],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/chapelets-anaux/"
+      }
+    ]
   }
 ]

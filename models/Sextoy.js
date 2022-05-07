@@ -25,9 +25,17 @@ const SextoySchema = new mongoose.Schema({
   tags_match: {
     type: [String],
   },
-  links_buy: {
-    type: [String],
-  },
+  articles: [
+    {
+      name_shop: {
+        type: String,
+        required: [true, 'Merci de préciser le label de la réponse'],
+      },
+      url: {
+        type: String,
+      },
+    },
+  ],
 })
 
 export default mongoose.model('Sextoy', SextoySchema)

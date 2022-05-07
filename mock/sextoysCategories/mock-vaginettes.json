@@ -12,7 +12,12 @@
       "penetration",
       "penetration-vaginale"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
@@ -27,7 +32,12 @@
       "penetration-vaginale",
       "sans-vibration"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
@@ -41,7 +51,12 @@
       "fellation",
       "vibration"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
@@ -55,7 +70,12 @@
       "sans-vibration",
       "fellation"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
@@ -70,7 +90,12 @@
       "penetration",
       "penetration-vaginale"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
@@ -85,14 +110,24 @@
       "penetration",
       "penetration-vaginale"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
     "name": "vaginette à succion",
     "description": "Les vaginettes sont à destination des hommes qui désirent augmenter l'intensité de leurs plaisir solitaire..",
     "tags_match": ["homme", "penis", "fantaisie", "manuel", "fellation"],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   },
   {
     "category": "vaginette",
@@ -106,6 +141,11 @@
       "penetration",
       "penetration-vaginale"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/fleshlight/"
+      }
+    ]
   }
 ]

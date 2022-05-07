@@ -4,6 +4,7 @@ import Question from './Question'
 import QuestionContainer from './QuestionContainer'
 import SextoyCategory from './SextoyCategory'
 import SexToyCategoryCard from './SexToyCategoryCard'
+import SextoyArticle from './SextoyArticle'
 import { DefaultButton, HipsterButton } from './Buttons'
 
 export {
@@ -15,4 +16,5 @@ export {
   HipsterButton,
   SextoyCategory,
   SexToyCategoryCard,
+  SextoyArticle,
 }

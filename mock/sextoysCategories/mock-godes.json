@@ -11,7 +11,12 @@
       "vibration",
       "moyen"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/godemichet-pour-homme/"
+      }
+    ]
   },
   {
     "category": "gode",
@@ -25,14 +30,24 @@
       "vibration",
       "moyen"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/godemichet-pour-homme/"
+      }
+    ]
   },
   {
     "category": "gode",
     "name": "Gode vibrant R",
     "description": "Les godes sont le grand classique, offrez-vous du plaisir immédiat!.",
     "tags_match": ["homme", "realiste", "prostate", "manuel", "moyen"],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/godemichet-pour-homme/"
+      }
+    ]
   },
   {
     "category": "gode",
@@ -46,7 +61,12 @@
       "vibration",
       "moyen"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/godemichet-pour-homme/"
+      }
+    ]
   },
   {
     "category": "gode",
@@ -60,13 +80,23 @@
       "sans-vibration",
       "moyen"
     ],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/godemichet-pour-homme/"
+      }
+    ]
   },
   {
     "category": "gode",
     "name": "Gode F",
     "description": "Les godes sont le grand classique, offrez-vous du plaisir immédiat!.",
     "tags_match": ["homme", "fantaisie", "prostate", "manuel", "moyen"],
-    "links_buy": []
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url": "https://www.kisskiss.ch/fr/godemichet-pour-homme/"
+      }
+    ]
   }
 ]
