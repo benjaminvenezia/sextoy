@@ -7,9 +7,9 @@ const QuestionPage = () => {
   const [question, setQuestion] = useState()
 
   useEffect(() => {
-    async function fetchData() {
-      const response = await axios.get(`/api/v1/question`)
-      setQuestion(response.data)
+    const fetchData = async () => {
+      const { data } = await axios.get(`/api/v1/question`)
+      setQuestion(data)
     }
 
     fetchData()
