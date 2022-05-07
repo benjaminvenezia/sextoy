@@ -4,9 +4,7 @@ import axios from 'axios'
 import { SexToyCategoryCard } from '.'
 
 const SextoyCategory = ({ tagsNextQuestion }) => {
-  let url2 = `http://localhost:5004/api/v1/sextoy/tags?tags=${tagsNextQuestion.join(
-    ', '
-  )}`
+  let url2 = `/api/v1/sextoy/tags?tags=${tagsNextQuestion.join(', ')}`
 
   const [categories, setCategories] = useState()
 
