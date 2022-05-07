@@ -6,12 +6,12 @@ import axios from 'axios'
 const QuestionPage = () => {
   const [question, setQuestion] = useState()
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await axios.get(`/api/v1/question`)
-      setQuestion(data)
-    }
+  const fetchData = async () => {
+    const { data } = await axios.get(`/api/v1/question`)
+    setQuestion(data)
+  }
 
+  useEffect(() => {
     fetchData()
   }, [])
 
