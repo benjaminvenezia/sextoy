@@ -31,7 +31,10 @@ const SextoySchema = new mongoose.Schema({
         type: String,
         required: [true, 'Merci de préciser le label de la réponse'],
       },
-      url: {
+      url_category: {
+        type: String,
+      },
+      url_product: {
         type: String,
       },
     },
