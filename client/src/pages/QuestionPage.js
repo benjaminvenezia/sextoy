@@ -8,7 +8,7 @@ const QuestionPage = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(`http://localhost:5004/api/v1/question`)
+      const response = await axios.get(`/api/v1/question`)
       setQuestion(response.data)
     }
 
