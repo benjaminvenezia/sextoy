@@ -6,7 +6,7 @@ import sextoyRoute from './routes/sextoyRoutes.js'
 import cors from 'cors'
 
 dotenv.config()
-
+//test
 const app = express()
 
 app.use(express.json())
