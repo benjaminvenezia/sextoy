@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <Wrapper>
       <h1>Landing</h1>
-      {hello ? <p>Welcome!</p> : <p>Pas hello :/</p>}
+      {hello ? <p>Bienvenue!</p> : <p>Pas hello :/</p>}
       <button onClick={toggleWelcome}>Context</button>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis

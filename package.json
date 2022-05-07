@@ -10,6 +10,8 @@
     "install-client": "cd client && npm install",
     "build-client": "cd client && npm run build",
     "heroku-postbuild": "npm run install-client && npm run build-client",
+    "heroku-push": "git push heroku main",
+    "push-all": "git push heroku main && git push",
     "server": "nodemon server --ignore client",
     "client": "npm start --prefix client",
     "start": "nodemon server",
