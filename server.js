@@ -1,27 +1,38 @@
 import express from 'express'
-import connectDB from './db/connect.js'
+const app = express()
+
 import dotenv from 'dotenv'
-import questionsRoute from './routes/questionRoutes.js'
-import sextoyRoute from './routes/sextoyRoutes.js'
-import cors from 'cors'
+dotenv.config()
+
+import morgan from 'morgan'
 
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import path from 'path'
 
-dotenv.config()
+import cors from 'cors'
 
-const app = express()
+import connectDB from './db/connect.js'
+
+import questionsRoute from './routes/questionRoutes.js'
+import sextoyRoute from './routes/sextoyRoutes.js'
+
+if (process.env.NODE_ENV !== 'production') {
+  app.use(morgan('dev'))
+}
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+app.use(express.static(path.resolve(__dirname, './client/build')))
 
 app.use(express.json())
 app.use(cors())
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
-app.use(express.static(path.resolve(__dirname, './client/build')))
-
 app.use('/api/v1/question', questionsRoute)
 app.use('/api/v1/sextoy', sextoyRoute)
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))
+})
 
 const port = process.env.PORT || 5004
 

@@ -6,7 +6,7 @@ const Landing = () => {
   const { toggleWelcome, hello } = useAppContext()
   return (
     <Wrapper>
-      <h1>Landing</h1>
+      <h1>Desyr</h1>
       {hello ? <p>Bienvenue!</p> : <p>Pas hello :/</p>}
       <button onClick={toggleWelcome}>Context</button>
       <p>
