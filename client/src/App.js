@@ -1,6 +1,6 @@
 import GlobalStyles from './global-styles'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { ErrorPage, QuestionPage, Landing } from './pages'
+import { ErrorPage, LoginPage, Homepage } from './pages'
 import { Navbar } from './components'
 
 function App() {
@@ -9,13 +9,11 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Navbar />
-        <Landing />
-        <QuestionPage />
-        {/* <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/questions" element={<QuestionPage />} />
+        <Routes>
+          <Route index element={<Homepage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<ErrorPage />} />
-        </Routes> */}
+        </Routes>
       </BrowserRouter>
     </div>
   )
