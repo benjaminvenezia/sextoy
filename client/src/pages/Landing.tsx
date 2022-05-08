@@ -8,6 +8,7 @@ const Landing = () => {
     <Wrapper>
       <div className="page">
         <h1>Desyr</h1>
+        <p>administration</p>
         {hello ? <p>Bienvenue!</p> : <p>Pas hello :/</p>}
         <button onClick={toggleWelcome}>Context</button>
         <p>
