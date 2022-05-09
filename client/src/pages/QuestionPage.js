@@ -5,19 +5,29 @@ import axios from 'axios'
 
 const QuestionPage = () => {
   const [question, setQuestion] = useState()
-
-  const fetchData = async () => {
-    const { data } = await axios.get(`/api/v1/question`)
-    setQuestion(data)
-  }
+  const [firstQuestion, setFirstQuestion] = useState()
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await axios.get(`/api/v1/question`)
+        setFirstQuestion(result.data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
     fetchData()
+    setFirstQuestion(null)
   }, [])
 
   return (
     <Wrapper>
-      <QuestionContainer question={question} setQuestion={setQuestion} />
+      <QuestionContainer
+        firstQuestion={firstQuestion}
+        setFirstQuestion={setFirstQuestion}
+        question={question}
+        setQuestion={setQuestion}
+      />
     </Wrapper>
   )
 }

@@ -3,13 +3,19 @@ import { Question, SextoyCategory } from '.'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const QuestionContainer = ({ setQuestion, question }) => {
+const QuestionContainer = ({
+  setQuestion,
+  question,
+  firstQuestion,
+  setFirstQuestion,
+}) => {
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
   const [isOver, setIsOver] = useState(false)
 
   let url = `/api/v1/question/tags?tags=${tagsNextQuestion.join(', ')}`
 
   const handleClick = (tags) => {
+    setFirstQuestion(null)
     tags.forEach((tag) => {
       setTagsNextQuestion([...tagsNextQuestion, tag])
     })
@@ -31,15 +37,27 @@ const QuestionContainer = ({ setQuestion, question }) => {
     fetchData(url)
   }, [tagsNextQuestion, isOver])
 
-  return (
-    <Wrapper>
-      {!isOver ? (
-        <Question question={question} handleClick={handleClick} />
-      ) : (
-        <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
-      )}
-    </Wrapper>
-  )
+  if (firstQuestion) {
+    return (
+      <Wrapper>
+        {!isOver ? (
+          <Question question={firstQuestion} handleClick={handleClick} />
+        ) : (
+          <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
+        )}
+      </Wrapper>
+    )
+  } else {
+    return (
+      <Wrapper>
+        {!isOver ? (
+          <Question question={question} handleClick={handleClick} />
+        ) : (
+          <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
+        )}
+      </Wrapper>
+    )
+  }
 }
 
 const Wrapper = styled.div`
