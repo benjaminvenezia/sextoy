@@ -8,25 +8,25 @@ Cette recherche s'effectuera par un questionnaire automatiquement généré au f
 > Installation des librairies côté client
 
 ```bash
-npm run dev install-client
+npm run install-client
 ```
 
 > Installation des librairies côté serveur
 
 ```bash
-npm run dev install-server
+npm run install-server
 ```
 
 > Lancement du serveur
 
 ```bash
-npm run dev server
+npm run server
 ```
 
 > Lancement du client
 
 ```bash
-npm run dev client
+npm run client
 ```
 
 ## Contributing
