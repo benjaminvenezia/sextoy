@@ -321,6 +321,11 @@ ul {
   }
 }
 
+.remove-animation {
+  transform: translateY(-3000px);
+  transition: 2s;
+}
+
 
 
 
