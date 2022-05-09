@@ -5,7 +5,10 @@ import QuestionContainer from './QuestionContainer'
 import SextoyCategory from './SextoyCategory'
 import SexToyCategoryCard from './SexToyCategoryCard'
 import SextoyArticle from './SextoyArticle'
+import FormRow from './FormRow'
+import FormRowSelect from './FormRowSelect'
 import { DefaultButton, HipsterButton } from './Buttons'
+import Alert from './Alert'
 
 export {
   Logo,
@@ -17,4 +20,7 @@ export {
   SextoyCategory,
   SexToyCategoryCard,
   SextoyArticle,
+  FormRow,
+  FormRowSelect,
+  Alert,
 }
