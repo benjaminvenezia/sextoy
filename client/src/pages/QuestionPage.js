@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { QuestionContainer } from '../components'
+import { QuestionContainer, Navbar } from '../components'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -22,6 +22,7 @@ const QuestionPage = () => {
 
   return (
     <Wrapper>
+      <Navbar />
       <QuestionContainer
         firstQuestion={firstQuestion}
         setFirstQuestion={setFirstQuestion}

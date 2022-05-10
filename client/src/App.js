@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route index element={<Landing />} />
           <Route path="/login" element={<LoginPage />} />

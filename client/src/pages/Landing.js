@@ -1,6 +1,5 @@
-import { Logo } from '../components'
+import { NetworksIcons } from '../components'
 import styled from 'styled-components'
-import { useAppContext } from '../context/appContext'
 import { useState } from 'react'
 import QuestionPage from './QuestionPage'
 
@@ -36,6 +35,7 @@ const Landing = () => {
             </button>
           </div>
         </div>
+        <NetworksIcons className="networksIcons" />
       </Wrapper>
     )
   } else {
@@ -44,6 +44,8 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
+  position: relative;
+
   .text-container {
     margin-top: 50%;
     text-align: center;
@@ -66,18 +68,28 @@ const Wrapper = styled.main`
     }
   }
 
+  .networksIcons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
   button:focus {
     border: none;
     outline-style: none;
-    box-shadow: 0px 0px 15px purple;
+    box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
   }
 
   color: var(--primary);
-  position: absolute;
+  /* position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   background-color: var(--black);
   display: flex;
   justify-content: center;
