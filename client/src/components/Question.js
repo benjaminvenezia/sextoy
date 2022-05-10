@@ -41,11 +41,12 @@ const Question = ({ question, handleClick }) => {
 }
 
 const Wrapper = styled.div`
+  width: 100%;
   h1 {
-    color: var(--primary-50);
+    color: var(--primary);
+    font-size: 1.4rem;
   }
   padding: 20px;
-  border-radius: 2.5rem;
   box-shadow: 1px 1px 15px black;
 `
 

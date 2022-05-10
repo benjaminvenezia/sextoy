@@ -63,7 +63,8 @@ const QuestionContainer = ({
 const Wrapper = styled.div`
   background-color: black;
   border-radius: 2.5rem;
-  width: 50%;
+  width: 95%;
+  text-align: center;
   margin: 100px auto;
 `
 
