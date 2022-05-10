@@ -328,10 +328,6 @@ ul {
   transition: 2s;
 }
 
-
-
-
-
 `
 
 export default GlobalStyles

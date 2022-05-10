@@ -34,8 +34,9 @@ const Landing = () => {
               Découvrir
             </button>
           </div>
+
+          <NetworksIcons />
         </div>
-        <NetworksIcons className="networksIcons" />
       </Wrapper>
     )
   } else {
@@ -44,13 +45,21 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
-  position: relative;
+  .page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
 
   .text-container {
-    margin-top: 50%;
+    margin-top: 20%;
     text-align: center;
     p {
       span {
+        font-family: Helvetica, sans-serif;
+        font-weight: 100;
         letter-spacing: 0.1rem;
       }
 
@@ -68,32 +77,21 @@ const Wrapper = styled.main`
     }
   }
 
-  .networksIcons {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
   button {
     padding: 10px 20px;
-  }
 
-  button:focus {
-    border: none;
-    outline-style: none;
-    box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
+    &:focus {
+      border: none;
+      outline-style: none;
+      box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   color: var(--primary);
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
-  background-color: var(--black);
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
 
   /* @media (min-width: 992px) {
     .page {

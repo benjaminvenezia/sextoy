@@ -12,9 +12,11 @@ const NetworksIcons = () => {
 }
 
 const Wrapper = styled.div`
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
   height: 50px;
   flex-direction: column;
   max-width: 20px;
