@@ -1,7 +1,7 @@
 import logo from '../assets/icons/LogoDesyre.svg'
 
 const Logo = () => {
-  return <img  src={logo} alt="desyre" className="LogoNav" />
+  return <img src={logo} alt="desyre" />
 }
 
 export default Logo

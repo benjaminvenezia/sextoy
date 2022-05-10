@@ -1,16 +1,14 @@
 import styled from 'styled-components'
-import {Logo} from '.'
+import { Logo } from '.'
 
 // import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <Wrapper>
-      <div className="nav-center">
-       <Logo />
-       
-    
-        {/* <div className="containerNavElmt">
+      <Logo className="logo" />
+
+      {/* <div className="containerNavElmt">
           <Link className="salut" to="/">
             Homme
           </Link>
@@ -27,7 +25,6 @@ const Navbar = () => {
             Contacts
           </Link>
         </div> */}
-      </div>
     </Wrapper>
   )
 }
@@ -35,15 +32,13 @@ const Navbar = () => {
 const Wrapper = styled.nav`
   height: var(--nav-height);
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px 0 15% 0;
+  justify-content: center;
 
-  .LogoSearch {
-    width: 30px;
+  img {
+    margin-top: 10px;
   }
 
-  .salut{
+  .salut {
     color: rgb(246, 235, 216);
     margin-left: 40px;
     padding-bottom: 7px;
@@ -57,7 +52,7 @@ const Wrapper = styled.nav`
         rgba(246, 235, 216, 1) 10%,
         transparent 10.01%
       )
-      no-repeat left bottom  / 0 100%;
+      no-repeat left bottom / 0 100%;
     transition: background-size 0.5s;
   }
 
@@ -69,18 +64,7 @@ const Wrapper = styled.nav`
     width: 100px;
   }
 
-  .nav-center {
-    display: flex;
-    width: 90vw;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   background: var(--black);
-
-  .nav-center {
-    width: 85%;
-  }
 `
 
 export default Navbar

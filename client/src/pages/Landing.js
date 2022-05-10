@@ -54,7 +54,7 @@ const Wrapper = styled.main`
   }
 
   .text-container {
-    margin-top: 20%;
+    margin-top: 10%;
     text-align: center;
     p {
       span {
