@@ -1,12 +1,32 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import {Logo} from '.'
+
+// import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <Wrapper>
       <div className="nav-center">
-        <Link to="/">Homepage</Link>
-        <Link to="login">Login</Link>
+       <Logo />
+       
+    
+        {/* <div className="containerNavElmt">
+          <Link className="salut" to="/">
+            Homme
+          </Link>
+          <Link className="salut" to="/">
+            Femme
+          </Link>
+          <Link className="salut" to="/">
+            Couple
+          </Link>
+          <Link className="salut" to="/">
+            Partenaires
+          </Link>
+          <Link className="salut" to="/">
+            Contacts
+          </Link>
+        </div> */}
       </div>
     </Wrapper>
   )
@@ -16,58 +36,50 @@ const Wrapper = styled.nav`
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
-  .logo {
-    display: flex;
-    align-items: center;
+  justify-content: space-around;
+  margin: 20px 0 15% 0;
+
+  .LogoSearch {
+    width: 30px;
+  }
+
+  .salut{
+    color: rgb(246, 235, 216);
+    margin-left: 40px;
+    padding-bottom: 7px;
+  }
+
+  a {
+    text-decoration: none;
+    background: linear-gradient(
+        to top,
+        rgba(246, 235, 216, 1) 0%,
+        rgba(246, 235, 216, 1) 10%,
+        transparent 10.01%
+      )
+      no-repeat left bottom  / 0 100%;
+    transition: background-size 0.5s;
+  }
+
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  .LogoNav {
     width: 100px;
   }
+
   .nav-center {
     display: flex;
     width: 90vw;
     align-items: center;
     justify-content: space-between;
   }
-  .toggle-btn {
-    background: transparent;
-    border-color: transparent;
-    font-size: 1.75rem;
-    color: var(--primary-500);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  background: var(--white);
-  .btn-container {
-    position: relative;
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 0.5rem;
-    position: relative;
-    box-shadow: var(--shadow-2);
-  }
 
-  .logo-text {
-    display: none;
-    margin: 0;
-  }
-  @media (min-width: 992px) {
-    position: sticky;
-    top: 0;
+  background: var(--black);
 
-    .nav-center {
-      width: 90%;
-    }
-    .logo {
-      display: none;
-    }
-    .logo-text {
-      display: block;
-    }
+  .nav-center {
+    width: 85%;
   }
 `
 

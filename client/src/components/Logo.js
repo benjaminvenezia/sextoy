@@ -1,7 +1,7 @@
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/icons/LogoDesyre.svg'
 
 const Logo = () => {
-  return <img src={logo} alt="jobify" className="logo" />
+  return <img  src={logo} alt="desyre" className="LogoNav" />
 }
 
 export default Logo
