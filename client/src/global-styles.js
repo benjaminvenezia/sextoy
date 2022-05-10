@@ -344,7 +344,6 @@ ul {
   transition: .3s;
 }
 
-
 `
 
 export default GlobalStyles

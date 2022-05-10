@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { HipsterButton } from '.'
+import { HipsterButton, Illustration } from '.'
 import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 // import { Question as QuestionModel } from '@/models/Question'
@@ -20,6 +20,7 @@ const Question = ({ question, handleClick }) => {
 
   return (
     <Wrapper>
+      <Illustration />
       <div className="container-response">
         <h1>{label_question}</h1>
         <div className="buttons-answers">

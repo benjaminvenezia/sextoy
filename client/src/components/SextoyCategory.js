@@ -33,6 +33,7 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
             <br />
             Nous oeuvrons actuellement pour augmenter le champs des possibles! Merci
             de réessayer prochainement!
+            <br />
             <HipsterButton as="a" href="/">
               Revenir à la homepage
             </HipsterButton>
