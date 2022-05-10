@@ -21,27 +21,41 @@ const Question = ({ question, handleClick }) => {
   return (
     <Wrapper>
       <h1>{label_question}</h1>
-      {responses?.map((r) => {
-        if (r?.disabled) {
+      <div className="buttons-answers">
+        {responses?.map((r) => {
+          if (r?.disabled) {
+            return (
+              <HipsterButton disabled key={r._id}>
+                {r.label_answer} <span className="todo">Disponible le 7 Juin!</span>
+              </HipsterButton>
+            )
+          }
+
           return (
-            <HipsterButton disabled key={r._id}>
-              Disponible le 7 Juin!
+            <HipsterButton onClick={() => handleClick(r.tags)} key={r._id}>
+              {r.label_answer}
             </HipsterButton>
           )
-        }
-
-        return (
-          <HipsterButton onClick={() => handleClick(r.tags)} key={r._id}>
-            {r.label_answer}
-          </HipsterButton>
-        )
-      })}
+        })}
+      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  width: 100%;
+  margin: 0 auto;
+  .buttons-answers {
+    display: flex;
+    justify-content: center;
+  }
+
+  .todo {
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+  }
+
+  width: 50%;
   h1 {
     color: var(--primary);
     font-size: 1.4rem;
