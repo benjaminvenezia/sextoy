@@ -18,7 +18,7 @@
     "tags_match": ["homme", "prostate", "realiste"]
   },
   {
-    "label_question": "Motorisé, c'est noté! Veux-tu que le sextoy vibre?",
+    "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
     "responses": [
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
@@ -27,7 +27,7 @@
     "tags_match": ["homme", "prostate", "realiste", "robotise"]
   },
   {
-    "label_question": "Quelle taille pour cet objet robotisé et vibrant?",
+    "label_question": "Quelle taille pour cet objet-robotisé vibrant?",
     "responses": [
       { "label_answer": "petit", "tags": ["petit"] },
       { "label_answer": "moyen", "tags": ["moyen"] },
@@ -37,7 +37,7 @@
     "tags_match": ["homme", "prostate", "realiste", "robotise", "vibration"]
   },
   {
-    "label_question": "Quelle taille pour cet objet robotisé non vibrant?",
+    "label_question": "Quelle taille pour cet objet-robotisé non vibrant?",
     "responses": [
       { "label_answer": "petit", "tags": ["petit"] },
       { "label_answer": "moyen", "tags": ["moyen"] },
@@ -67,7 +67,7 @@
     "tags_match": ["homme", "prostate", "fantaisie"]
   },
   {
-    "label_question": "Motorisé, c'est noté! Veux-tu que le sextoy vibre?",
+    "label_question": "Motorisé, c'est noté! Veux-tu ajouter une possibilité que le sextoy vibre?",
     "responses": [
       { "label_answer": "Oui", "tags": ["vibration"] },
       { "label_answer": "Non", "tags": ["sans-vibration"] }
@@ -76,7 +76,7 @@
     "tags_match": ["homme", "prostate", "fantaisie", "robotise"]
   },
   {
-    "label_question": "Quelle taille pour cet objet robotisé vibrant?",
+    "label_question": "Quelle taille pour cet objet-robotisé vibrant?",
     "responses": [
       { "label_answer": "petit", "tags": ["petit"] },
       { "label_answer": "moyen", "tags": ["moyen"] },
@@ -86,7 +86,7 @@
     "tags_match": ["homme", "prostate", "fantaisie", "robotise", "vibration"]
   },
   {
-    "label_question": "Quelle taille pour cet objet robotisé non vibrant?",
+    "label_question": "Quelle taille pour cet objet-robotisé non vibrant?",
     "responses": [
       { "label_answer": "petit", "tags": ["petit"] },
       { "label_answer": "moyen", "tags": ["moyen"] },
