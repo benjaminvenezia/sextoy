@@ -46,9 +46,8 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  p {
-    color: var(--primary);
-  }
+  color: var(--primary);
+
   padding: 2rem;
 `
 export default SextoyCategory
