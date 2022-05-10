@@ -23,12 +23,13 @@ const Illustration = () => {
 }
 
 const StyledImage = styled.img`
-  width: 65%;
+  width: 30%;
   position: absolute;
   right: 0;
   opacity: 0.5;
 
   @media (max-width: 992px) {
+    width: 50%;
     bottom: 0;
   }
 `
