@@ -41,6 +41,18 @@ const Wrapper = styled.div`
         -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5;
     }
   }
+
+  @media (max-width: 992px) {
+    width: 90%;
+
+    h2 {
+      font-size: smaller;
+    }
+
+    p {
+      font-size: smaller;
+    }
+  }
 `
 
 export default SexToyCategoryCard

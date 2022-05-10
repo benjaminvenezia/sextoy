@@ -12,10 +12,10 @@ const SextoyArticle = ({ article }) => {
         <HipsterButton as="a" href={article.url_product}>
           {article.name_shop} vous recommande ce produit!
         </HipsterButton>
+        <HipsterButton as="a" href="/">
+          Revenir à la homepage
+        </HipsterButton>
       </div>
-      <HipsterButton as="a" href="/">
-        Revenir à la homepage
-      </HipsterButton>
     </Wrapper>
   )
 }
@@ -29,6 +29,21 @@ const Wrapper = styled.div`
 
   .buttons-container {
     display: flex;
+  }
+
+  @media (max-width: 992px) {
+    width: 90%;
+
+    h3 {
+      font-size: smaller;
+    }
+
+    .buttons-container {
+      flex-direction: column;
+      a {
+        width: 90%;
+      }
+    }
   }
 `
 

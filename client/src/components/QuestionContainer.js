@@ -65,7 +65,7 @@ const Wrapper = styled.div`
   border-radius: 2.5rem;
   width: 95%;
   text-align: center;
-  margin: 100px auto;
+  margin-top: 50px;
 `
 
 export default QuestionContainer
