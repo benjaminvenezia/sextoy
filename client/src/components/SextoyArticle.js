@@ -13,6 +13,9 @@ const SextoyArticle = ({ article }) => {
           {article.name_shop} vous recommande ce produit!
         </HipsterButton>
       </div>
+      <HipsterButton as="a" href="/">
+        Revenir à la homepage
+      </HipsterButton>
     </Wrapper>
   )
 }

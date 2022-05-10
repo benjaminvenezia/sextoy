@@ -1,4 +1,4 @@
-import { NetworksIcons } from '../components'
+import { NetworksIcons, HipsterButton } from '../components'
 import styled from 'styled-components'
 import { useState } from 'react'
 import QuestionPage from './QuestionPage'
@@ -30,9 +30,9 @@ const Landing = () => {
               <br />
               <span className="span3">Et découvre le sextoy de tes rêves.</span>
             </p>
-            <button autoFocus onClick={handleClick}>
+            <HipsterButton autoFocus onClick={handleClick}>
               Découvrir
-            </button>
+            </HipsterButton>
           </div>
 
           <NetworksIcons />
