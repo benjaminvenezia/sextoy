@@ -29,7 +29,6 @@ const Wrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin: 20px 0 15% 0;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
 
@@ -47,8 +46,8 @@ const Wrapper = styled.nav`
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
-    height: 3px;
+    width: 10%;
+    height: 1px;
     background: #F6EBD8;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
@@ -78,52 +77,6 @@ const Wrapper = styled.nav`
   .nav-center {
     width: 85%;
   }
-
-  /* .logo {
-    display: flex;
-    align-items: center;
-    width: 100px;
-  } */
-
-
-  /* .toggle-btn {
-    background: transparent;
-    border-color: transparent;
-    font-size: 1.75rem;
-    color: var(--primary-500);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  } */
-
-
-  /* .btn-container {
-    position: relative;
-  } */
-  /* .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 0.5rem;
-    position: relative;
-    box-shadow: var(--shadow-2);
-  } */
-
-  /* .logo-text {
-    display: none;
-    margin: 0;
-  } */
-  /* @media (min-width: 992px) {
-    position: sticky;
-    top: 0;
-
-    .logo {
-      display: none;
-    }
-    .logo-text {
-      display: block;
-    }
-  } */
 `
 
 export default Navbar
