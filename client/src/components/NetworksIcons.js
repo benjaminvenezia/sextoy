@@ -5,19 +5,26 @@ import instagramUrl from '../assets/icons/instagram.svg'
 const NetworksIcons = () => {
   return (
     <Wrapper>
-      <img src={instagramUrl} alt="instagram icon" />
+      <a href="https://www.instagram.com/desyre.ch/" target="_blank">
+        {' '}
+        <img src={instagramUrl} alt="instagram icon" />
+      </a>
       <img src={facebookUrl} alt="facebook icon" />
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
+  img:hover {
+    transform: scale(1.1);
+  }
+
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 50px;
+  left: 50px;
   display: flex;
   justify-content: space-around;
-  height: 50px;
+  height: 75px;
   flex-direction: column;
   max-width: 20px;
 `
