@@ -325,7 +325,8 @@ ul {
 
 .remove-animation {
   transform: translateY(-3000px);
-  transition: 2s;
+   transition: 2s;
+  transition-timing-function: cubic-bezier(0.35, 0.1, 0.85, 2);
 }
 
 `
