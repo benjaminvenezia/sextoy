@@ -1,43 +1,99 @@
-import { Logo } from '../components'
+import { NetworksIcons } from '../components'
 import styled from 'styled-components'
-import { useAppContext } from '../context/appContext'
+import { useState } from 'react'
+import QuestionPage from './QuestionPage'
 
 const Landing = () => {
-  const { toggleWelcome, hello } = useAppContext()
-  return (
-    <Wrapper>
-      <div className="page">
-        <h1>Desyr</h1>
-        <p>administration</p>
-        {hello ? <p>Bienvenue!</p> : <p>Pas hello :/</p>}
-        <button onClick={toggleWelcome}>Context</button>
-        <p>
-          Bienvenue sur Desyr, ce site vous permettra de trouver la catégorie de
-          Sextoy qui vous convient!
-        </p>
-        {/* <Logo /> */}
-      </div>
-    </Wrapper>
-  )
+  const [showLanding, setShowLanding] = useState(true)
+  const [showAnimation, setShowAnimation] = useState(false)
+
+  const handleClick = () => {
+    setShowAnimation(true)
+    setTimeout(function () {
+      setShowLanding(false)
+    }, 550)
+  }
+
+  if (showLanding) {
+    return (
+      <Wrapper className={showAnimation ? 'remove-animation' : ''}>
+        <div className="page">
+          <div className="text-container">
+            <p>
+              <span className="span1">Dis-nous en plus sur toi</span>
+              <br />
+              ...
+              <br />
+              <span className="span2">Laisse nous te guider</span>
+              <br />
+              ...
+              <br />
+              <span className="span3">Et découvre le sextoy de tes rêves.</span>
+            </p>
+            <button autoFocus onClick={handleClick}>
+              Découvrir
+            </button>
+          </div>
+
+          <NetworksIcons />
+        </div>
+      </Wrapper>
+    )
+  } else {
+    return <QuestionPage />
+  }
 }
 
 const Wrapper = styled.main`
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  .page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
 
-  h1 {
-    font-weight: 700;
-    color: var(--primary-50);
-    span {
-      color: var(--primary-50);
+  .text-container {
+    margin-top: 20%;
+    text-align: center;
+    p {
+      span {
+        font-family: Helvetica, sans-serif;
+        font-weight: 100;
+        letter-spacing: 0.1rem;
+      }
+
+      .span1 {
+        font-size: 0.7rem;
+        opacity: 0.5;
+      }
+      .span2 {
+        font-size: 1rem;
+        opacity: 0.75;
+      }
+      .span3 {
+        font-size: 1.3rem;
+      }
     }
   }
-  p {
-    color: var(--primary-50);
+
+  button {
+    padding: 10px 20px;
+
+    &:focus {
+      border: none;
+      outline-style: none;
+      box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  @media (min-width: 992px) {
+  color: var(--primary);
+
+  /* @media (min-width: 992px) {
     .page {
       grid-template-columns: 1fr 1fr;
       column-gap: 3rem;
@@ -45,6 +101,6 @@ const Wrapper = styled.main`
     .main-img {
       display: block;
     }
-  }
+  } */
 `
 export default Landing

@@ -16,6 +16,8 @@ html {
 } /*16px*/
 
 :root {
+  --primary: #F6EBD8;
+
   /* colors */
   --primary-50: #e0fcff;
   --primary-100: #bef8fd;
@@ -40,7 +42,7 @@ html {
   --grey-800: #243b53;
   --grey-900: #102a43;
   /* rest of the colors */
-  --black: #222;
+  --black: #000;
   --white: #fff;
   --red-light: #f8d7da;
   --red-dark: #842029;
@@ -321,9 +323,11 @@ ul {
   }
 }
 
-
-
-
+.remove-animation {
+  transform: translateY(-3000px);
+   transition: 2s;
+  transition-timing-function: cubic-bezier(0.35, 0.1, 0.85, 2);
+}
 
 `
 
