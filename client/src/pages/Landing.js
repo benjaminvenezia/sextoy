@@ -93,14 +93,12 @@ const Wrapper = styled.main`
 
   color: var(--primary);
 
-  /* @media (min-width: 992px) {
-    .page {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 3rem;
+  @media (max-width: 992px) {
+    button {
+      margin-top: 30%;
+      padding: 15px 30px;
+      box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
     }
-    .main-img {
-      display: block;
-    }
-  } */
+  }
 `
 export default Landing

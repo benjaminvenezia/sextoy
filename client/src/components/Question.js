@@ -70,6 +70,13 @@ const Wrapper = styled.div`
   }
   padding: 20px;
   box-shadow: 1px 1px 15px black;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    .buttons-answers {
+      flex-direction: column;
+    }
+  }
 `
 
 export default Question
