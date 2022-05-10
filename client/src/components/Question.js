@@ -25,7 +25,7 @@ const Question = ({ question, handleClick }) => {
         if (r?.disabled) {
           return (
             <HipsterButton disabled key={r._id}>
-              en cours de développement...
+              Disponible le 7 Juin!
             </HipsterButton>
           )
         }
