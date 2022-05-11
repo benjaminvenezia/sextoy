@@ -11,6 +11,7 @@ import { DefaultButton, HipsterButton } from './Buttons'
 import Alert from './Alert'
 import NetworksIcons from './NetworksIcons'
 import Illustration from './Illustration'
+import Spinner from './Spinner'
 
 export {
   Logo,
@@ -27,4 +28,5 @@ export {
   Alert,
   NetworksIcons,
   Illustration,
+  Spinner,
 }

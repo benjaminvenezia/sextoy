@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Question, SextoyCategory } from '.'
+import { Question, SextoyCategory, Spinner } from '.'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -11,6 +11,7 @@ const QuestionContainer = ({
 }) => {
   const [tagsNextQuestion, setTagsNextQuestion] = useState([])
   const [isOver, setIsOver] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   let url = `/api/v1/question/tags?tags=${tagsNextQuestion.join(', ')}`
 
@@ -31,36 +32,37 @@ const QuestionContainer = ({
     }
 
     setQuestion(response.data)
+    setIsLoading(false)
   }
 
   useEffect(() => {
+    setIsLoading(true)
     fetchData(url)
   }, [tagsNextQuestion, isOver])
 
-  if (firstQuestion) {
-    return (
-      <Wrapper>
-        {!isOver ? (
-          <Question question={firstQuestion} handleClick={handleClick} />
+  return (
+    <Wrapper>
+      {!isOver ? (
+        isLoading ? (
+          <Spinner />
         ) : (
-          <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
-        )}
-      </Wrapper>
-    )
-  } else {
-    return (
-      <Wrapper>
-        {!isOver ? (
-          <Question question={question} handleClick={handleClick} />
-        ) : (
-          <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
-        )}
-      </Wrapper>
-    )
-  }
+          <Question
+            question={firstQuestion ? firstQuestion : question}
+            handleClick={handleClick}
+          />
+        )
+      ) : (
+        <SextoyCategory tagsNextQuestion={tagsNextQuestion} />
+      )}
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
+  p {
+    color: var(--primary);
+  }
+
   background-color: black;
   border-radius: 2.5rem;
   width: 95%;
