@@ -17,26 +17,24 @@ const Landing = () => {
   if (showLanding) {
     return (
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
-        <div className="page">
-          <div className="text-container">
-            <p>
-              <span className="span1">Dis-nous en plus sur toi</span>
-              <br />
-              ...
-              <br />
-              <span className="span2">Laisse nous te guider</span>
-              <br />
-              ...
-              <br />
-              <span className="span3">Et découvre le sextoy de tes rêves.</span>
-            </p>
-            <HipsterButton autoFocus onClick={handleClick}>
-              Découvrir
-            </HipsterButton>
-          </div>
-
-          <NetworksIcons />
+        <div className="text-container">
+          <p>
+            <span className="span1">Dis-nous en plus sur toi</span>
+            <br />
+            ...
+            <br />
+            <span className="span2">Laisse nous te guider</span>
+            <br />
+            ...
+            <br />
+            <span className="span3">Et découvre le sextoy de tes rêves.</span>
+          </p>
+          <HipsterButton autoFocus onClick={handleClick}>
+            Découvrir
+          </HipsterButton>
         </div>
+
+        <NetworksIcons />
       </Wrapper>
     )
   } else {
@@ -45,18 +43,12 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
-  .page {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-
   .text-container {
-    margin-top: 10%;
+    padding: 0 20px;
+    margin-top: 15%;
     text-align: center;
     p {
+      margin: 0 auto;
       span {
         font-family: Helvetica, sans-serif;
         font-weight: 100;
@@ -78,7 +70,7 @@ const Wrapper = styled.main`
   }
 
   button {
-    padding: 10px 20px;
+    padding: 18px 28px;
 
     &:focus {
       border: none;
