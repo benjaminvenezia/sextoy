@@ -10,7 +10,6 @@ const Illustration = () => {
   const pickRandomIllustration = () => {
     const illustrations = [illu_1, illu_2, illu_3]
     const randomId = Math.floor(Math.random() * 3)
-    console.log(randomId)
     return illustrations[randomId]
   }
 
