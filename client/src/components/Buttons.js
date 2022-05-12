@@ -20,4 +20,10 @@ export const HipsterButton = styled(DefaultButton)`
   background: transparent;
   color: ${(props) => (props.disabled ? 'gray' : '#F6EBD8')};
   border: ${(props) => (props.disabled ? '1px solid gray' : '1px solid #F6EBD8')};
+  &:hover {
+    box-shadow: 0 0 5px var(--primary);
+    transition: 0.5s;
+    text-shadow: 0 0 1px var(--primary), 0 0 1px var(--primary),
+      0 0 1px var(--primary), 0 0 1px var(--primary);
+  }
 `
