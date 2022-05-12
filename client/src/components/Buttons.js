@@ -4,7 +4,7 @@ export const DefaultButton = styled.button`
   border-radius: 40px;
   cursor: pointer;
   width: 200px;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   height: 70px;
   border: none;
   text-transform: capitalize;
