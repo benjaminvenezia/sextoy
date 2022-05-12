@@ -19,15 +19,17 @@ const Landing = () => {
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
         <div className="text-container">
           <p>
-            <span className="span1">Dis-nous en plus sur toi</span>
+            <span className="span1 fading-animation1">Dis-nous en plus sur toi</span>
             <br />
-            ...
+            <span className="fall-animation">...</span>
             <br />
-            <span className="span2">Laisse nous te guider</span>
+            <span className="span2 fading-animation2">Laisse nous te guider</span>
             <br />
-            ...
+            <span className="fall-animation">...</span>
             <br />
-            <span className="span3">Et découvre le sextoy de tes rêves.</span>
+            <span className="span3 fading-animation3">
+              Et découvre le sextoy de tes rêves.
+            </span>
           </p>
           <HipsterButton autoFocus onClick={handleClick}>
             Découvrir
@@ -43,6 +45,31 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
+  .fading-animation1 {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  .fading-animation2 {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+  .fading-animation3 {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  .fall-animation {
+    animation-name: fall;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
   .text-container {
     height: 81vh;
     padding: 0 20px;
@@ -57,14 +84,15 @@ const Wrapper = styled.main`
       }
 
       .span1 {
+        opacity: 0;
         font-size: 0.7rem;
-        opacity: 0.5;
       }
       .span2 {
+        opacity: 0;
         font-size: 1rem;
-        opacity: 0.75;
       }
       .span3 {
+        opacity: 0;
         font-size: 1.3rem;
       }
     }
@@ -96,6 +124,26 @@ const Wrapper = styled.main`
       margin-top: 35%;
       padding: 25px 45px;
       box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @keyframes fall {
+    0% {
+      opacity: 0%;
+      transform: scaleY(-100px);
+    }
+    100% {
+      opacity: 100%;
+      transform: scaleY(0);
     }
   }
 `
