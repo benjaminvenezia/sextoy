@@ -19,14 +19,21 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
     fetchData(url2)
   }, [])
 
-  return (
-    <Wrapper>
-      {categories?.count > 0 ? (
-        ((<p>{categories?.count} catégorie de sextoy trouvée!</p>),
-        categories?.sextoys.map((category) => {
+  if (categories?.count > 0) {
+    return (
+      <Wrapper>
+        <p>
+          {categories.count} catégorie{categories.count > 1 ? 's' : ''} trouvée{' '}
+          {categories.count > 1 ? 's' : ''}
+        </p>
+        {categories?.sextoys.map((category) => {
           return <SexToyCategoryCard key={category._id} category={category} />
-        }))
-      ) : (
+        })}
+      </Wrapper>
+    )
+  } else {
+    return (
+      <Wrapper>
         <>
           <p>
             Malheureusement, aucune catégorie n'a matché avec vos conditions! 🥺{' '}
@@ -39,13 +46,14 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
             </HipsterButton>
           </p>
         </>
-      )}
-    </Wrapper>
-  )
+      </Wrapper>
+    )
+  }
 }
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   color: var(--primary);
 
