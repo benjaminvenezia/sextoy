@@ -10,6 +10,7 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
   const [categories, setCategories] = useState()
 
   const fetchData = async (url) => {
+    await axios.patch('api/v1/increment')
     const response = await axios.get(url)
 
     setCategories(response.data)
@@ -23,7 +24,7 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
     return (
       <Wrapper>
         <p>
-          {categories.count} catégorie{categories.count > 1 ? 's' : ''} trouvée{' '}
+          {categories.count} catégorie{categories.count > 1 ? 's' : ''} trouvée{''}
           {categories.count > 1 ? 's' : ''}
         </p>
         {categories?.sextoys.map((category) => {

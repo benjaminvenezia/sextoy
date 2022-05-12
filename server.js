@@ -16,6 +16,7 @@ import connectDB from './db/connect.js'
 
 import questionsRoute from './routes/questionRoutes.js'
 import sextoyRoute from './routes/sextoyRoutes.js'
+import appRoutes from './routes/appRoutes.js'
 
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'))
@@ -29,6 +30,7 @@ app.use(cors())
 
 app.use('/api/v1/question', questionsRoute)
 app.use('/api/v1/sextoy', sextoyRoute)
+app.use('/api/v1/', appRoutes)
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))
