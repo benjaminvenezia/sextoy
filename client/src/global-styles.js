@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
   font-size: 100%;
@@ -50,8 +50,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto Condensed', Sans-Serif;
-  --bodyFont: 'Cabin', Sans-Serif;
+  --headingFont: 'Montserrat', Sans-Serif;
+  --bodyFont: 'Montserrat', Sans-Serif;
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
