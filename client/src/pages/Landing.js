@@ -42,7 +42,7 @@ const Landing = () => {
             <span className="fall-animation">...</span>
             <br />
             <span className="span3 fading-animation3">
-              Et soit la {counter} ème personne à trouver le sextoy de tes rêves.
+              Et soit la {counter} ème personne à trouver le sextoy de ses rêves.
             </span>
           </p>
           <HipsterButton autoFocus onClick={handleClick}>
