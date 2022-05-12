@@ -7,11 +7,9 @@ const SexToyCategoryCard = ({ category }) => {
       <h2>{category.name}</h2>
       <p>{category.description}</p>
 
-      <p>
-        {category.articles.map((article) => {
-          return <SextoyArticle article={article} />
-        })}
-      </p>
+      {category.articles.map((article) => {
+        return <SextoyArticle key={category._id} article={article} />
+      })}
     </Wrapper>
   )
 }
