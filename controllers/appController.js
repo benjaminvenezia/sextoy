@@ -3,20 +3,6 @@ import { StatusCodes } from 'http-status-codes'
 import mongoose from 'mongoose'
 
 const incrementCounter = async (req, res) => {
-  //   UserJourney.findOneAndUpdate(
-  //     { _id: 0 },
-  //     { $inc: { count_quizz_ended: 1 } },
-  //     { new: false },
-  //     function (err, response) {
-  //       if (err) {
-  //         console.log(err)
-  //       } else {
-  //         console.log(response)
-  //       }
-
-  //       res.status(StatusCodes.OK).json({ status: 'incremented' })
-  //     }
-  //   )
   UserJourney.findByIdAndUpdate(
     { _id: '627d03c52df59a2f01aefb11' },
     { $inc: { count_quizz_ended: 1 } }
@@ -29,4 +15,12 @@ const incrementCounter = async (req, res) => {
   })
 }
 
-export { incrementCounter }
+const getCounter = async (req, res) => {
+  const { count_quizz_ended } = await UserJourney.findById(
+    '627d03c52df59a2f01aefb11'
+  ).exec()
+
+  return res.status(200).json(count_quizz_ended)
+}
+
+export { incrementCounter, getCounter }

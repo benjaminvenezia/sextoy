@@ -30,7 +30,7 @@ app.use(cors())
 
 app.use('/api/v1/question', questionsRoute)
 app.use('/api/v1/sextoy', sextoyRoute)
-app.use('/api/v1/', appRoutes)
+app.use('/api/v1/counter', appRoutes)
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))

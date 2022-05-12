@@ -10,7 +10,7 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
   const [categories, setCategories] = useState()
 
   const fetchData = async (url) => {
-    await axios.patch('api/v1/increment')
+    await axios.patch('api/v1/counter')
     const response = await axios.get(url)
 
     setCategories(response.data)

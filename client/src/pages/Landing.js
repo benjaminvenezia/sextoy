@@ -1,11 +1,13 @@
 import { NetworksIcons, HipsterButton } from '../components'
 import styled from 'styled-components'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import QuestionPage from './QuestionPage'
+import axios from 'axios'
 
 const Landing = () => {
   const [showLanding, setShowLanding] = useState(true)
   const [showAnimation, setShowAnimation] = useState(false)
+  const [counter, setCounter] = useState()
 
   const handleClick = () => {
     setShowAnimation(true)
@@ -13,6 +15,18 @@ const Landing = () => {
       setShowLanding(false)
     }, 550)
   }
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const counter = await axios.get('api/v1/counter')
+      setCounter(counter.data)
+    }
+    try {
+      fetchData()
+    } catch (error) {
+      console.log(error)
+    }
+  }, [])
 
   if (showLanding) {
     return (
@@ -28,7 +42,7 @@ const Landing = () => {
             <span className="fall-animation">...</span>
             <br />
             <span className="span3 fading-animation3">
-              Et découvre le sextoy de tes rêves.
+              Et soit la {counter} ème personne à trouver le sextoy de tes rêves.
             </span>
           </p>
           <HipsterButton autoFocus onClick={handleClick}>
