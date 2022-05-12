@@ -45,7 +45,7 @@ const Landing = () => {
 const Wrapper = styled.main`
   .text-container {
     padding: 0 20px;
-    margin-top: 15%;
+    margin-top: 7%;
     text-align: center;
     p {
       margin: 0 auto;
@@ -70,6 +70,7 @@ const Wrapper = styled.main`
   }
 
   button {
+    margin-top: 10%;
     padding: 18px 28px;
 
     &:focus {
@@ -86,9 +87,13 @@ const Wrapper = styled.main`
   color: var(--primary);
 
   @media (max-width: 992px) {
+    .text-container {
+      margin-top: 15%;
+    }
+
     button {
-      margin-top: 30%;
-      padding: 15px 30px;
+      margin-top: 35%;
+      padding: 25px 45px;
       box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
     }
   }
