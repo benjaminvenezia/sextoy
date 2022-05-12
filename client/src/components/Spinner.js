@@ -1,4 +1,4 @@
-import loading from '../assets/icons/loading.svg'
+import loading from '../assets/icons/loading2.svg'
 import styled from 'styled-components'
 
 const Spinner = () => {
