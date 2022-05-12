@@ -22,7 +22,7 @@ const Illustration = () => {
 }
 
 const StyledImage = styled.img`
-  width: 30%;
+  width: 200px;
   position: absolute;
   right: 0;
   opacity: 0.5;

@@ -5,6 +5,7 @@ export const DefaultButton = styled.button`
   cursor: pointer;
   width: 200px;
   font-size: 1.1rem;
+  font-weight: 200;
   height: 70px;
   border: none;
   text-transform: capitalize;
