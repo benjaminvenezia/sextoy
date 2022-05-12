@@ -44,7 +44,7 @@ const Landing = () => {
 
 const Wrapper = styled.main`
   .text-container {
-    height: 85vh;
+    height: 81vh;
     padding: 0 20px;
     margin-top: 7%;
     text-align: center;
