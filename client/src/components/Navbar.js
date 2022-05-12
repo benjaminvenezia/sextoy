@@ -6,7 +6,7 @@ import { Logo } from '.'
 const Navbar = () => {
   return (
     <Wrapper>
-      <Logo className="logo" />
+      <Logo />
 
       {/* <div className="containerNavElmt">
           <Link className="salut" to="/">
@@ -34,10 +34,6 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
 
-  img {
-    margin-top: 10px;
-  }
-
   .salut {
     color: rgb(246, 235, 216);
     margin-left: 40px;
@@ -58,10 +54,6 @@ const Wrapper = styled.nav`
 
   a:hover {
     background-size: 100% 100%;
-  }
-
-  .LogoNav {
-    width: 100px;
   }
 
   background: var(--black);

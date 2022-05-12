@@ -1,7 +1,12 @@
 import logo from '../assets/icons/LogoDesyre.svg'
+import styled from 'styled-components'
 
 const Logo = () => {
-  return <img src={logo} alt="desyre" />
+  return <Wrapper src={logo} alt="desyre" />
 }
+
+const Wrapper = styled.img`
+  margin-top: 10px;
+`
 
 export default Logo
