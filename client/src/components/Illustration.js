@@ -26,6 +26,7 @@ const StyledImage = styled.img`
   position: absolute;
   right: 0;
   opacity: 0.5;
+  z-index: -100;
 
   @media (max-width: 992px) {
     width: 50%;
