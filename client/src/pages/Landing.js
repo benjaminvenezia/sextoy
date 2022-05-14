@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 import QuestionPage from './QuestionPage'
 import axios from 'axios'
+import video from '../assets/video/Animation_Desyre.mp4'
 
 const Landing = () => {
   const [showLanding, setShowLanding] = useState(true)
@@ -31,6 +32,10 @@ const Landing = () => {
   if (showLanding) {
     return (
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
+        <video autoPlay muted>
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="text-container">
           <p>
             <span className="span1 fading-animation1">Dis-nous en plus sur toi</span>
@@ -59,6 +64,15 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   .fading-animation1 {
     animation-name: fade;
     animation-duration: 1s;
