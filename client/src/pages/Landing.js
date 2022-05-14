@@ -120,15 +120,15 @@ const Wrapper = styled.main`
 
       .span1 {
         opacity: 0;
-        font-size: 0.7rem;
+        font-size: 1.2rem;
       }
       .span2 {
         opacity: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
       .span3 {
         opacity: 0;
-        font-size: 1.3rem;
+        font-size: 2.2rem;
       }
     }
   }
