@@ -1,4 +1,4 @@
-import { NetworksIcons, HipsterButton } from '../components'
+import { NetworksIcons, HipsterButton, BadConnexionLoader } from '../components'
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 import QuestionPage from './QuestionPage'
@@ -37,7 +37,7 @@ const Landing = () => {
   if (showLanding) {
     return (
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
-        {showLoader && <div className="loading-page">Chargement</div>}
+        {showLoader && <BadConnexionLoader />}
 
         <video autoPlay muted onLoadedData={loadVideo}>
           <source src={video} type="video/mp4" />
@@ -71,17 +71,6 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
-  .loading-page {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000000;
-    background-color: black;
-    color: white;
-  }
-
   video {
     object-fit: cover;
     width: 100vw;

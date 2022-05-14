@@ -12,6 +12,7 @@ import Alert from './Alert'
 import NetworksIcons from './NetworksIcons'
 import Illustration from './Illustration'
 import Spinner from './Spinner'
+import BadConnexionLoader from './BadConnexionLoader'
 
 export {
   Logo,
@@ -29,4 +30,5 @@ export {
   NetworksIcons,
   Illustration,
   Spinner,
+  BadConnexionLoader,
 }
