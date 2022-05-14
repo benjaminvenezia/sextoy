@@ -14,6 +14,7 @@ export const DefaultButton = styled.button`
 `
 
 export const HipsterButton = styled(DefaultButton)`
+  backdrop-filter: blur(10px);
   display: inline-flex;
   align-items: center;
   justify-content: center;

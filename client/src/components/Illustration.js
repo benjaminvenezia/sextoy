@@ -22,9 +22,11 @@ const Illustration = () => {
 }
 
 const StyledImage = styled.img`
-  width: 200px;
+  width: auto;
+  height: 60%;
+  overflow: hidden;
   position: absolute;
-  right: 0;
+  right: 20%;
   opacity: 0.5;
   z-index: -100;
 

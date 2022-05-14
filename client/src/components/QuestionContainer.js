@@ -63,7 +63,7 @@ const Wrapper = styled.div`
     color: var(--primary);
   }
 
-  background-color: black;
+  background-color: transparent;
   border-radius: 2.5rem;
   width: 95%;
   text-align: center;
