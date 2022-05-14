@@ -211,14 +211,14 @@ ul {
   transition-timing-function: cubic-bezier(0.35, 0.1, 0.85, 2);
 }
 
-.remove-animation img{
+.remove-animation video{
   opacity: 0;
-  transition: .5s;
+  transition: .3s;
 }
 
 .remove-animation button{
   opacity: 0;
-  transition: .5s;
+  transition: .3s;
 }
 
 .remove-animation p{
