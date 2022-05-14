@@ -45,8 +45,8 @@ const Wrapper = styled.nav`
     background: linear-gradient(
         to top,
         rgba(246, 235, 216, 1) 0%,
-        rgba(246, 235, 216, 1) 10%,
-        transparent 10.01%
+        rgba(246, 235, 216, 1) 2%,
+        transparent 3.01%
       )
       no-repeat left bottom / 0 100%;
     transition: background-size 0.5s;
