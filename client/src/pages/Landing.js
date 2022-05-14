@@ -9,6 +9,7 @@ const Landing = () => {
   const [showLanding, setShowLanding] = useState(true)
   const [showAnimation, setShowAnimation] = useState(false)
   const [counter, setCounter] = useState()
+  const [showLoader, setShowLoader] = useState(true)
 
   const handleClick = () => {
     setShowAnimation(true)
@@ -29,10 +30,16 @@ const Landing = () => {
     }
   }, [])
 
+  const loadVideo = () => {
+    setShowLoader(false)
+  }
+
   if (showLanding) {
     return (
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
-        <video autoPlay muted>
+        {showLoader && <div className="loading-page">Chargement</div>}
+
+        <video autoPlay muted onLoadedData={loadVideo}>
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -64,6 +71,17 @@ const Landing = () => {
 }
 
 const Wrapper = styled.main`
+  .loading-page {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    background-color: black;
+    color: white;
+  }
+
   video {
     object-fit: cover;
     width: 100vw;
