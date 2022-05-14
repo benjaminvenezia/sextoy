@@ -62,7 +62,7 @@ const Wrapper = styled.div`
   p {
     color: var(--primary);
   }
-
+  margin: 0 auto;
   background-color: transparent;
   border-radius: 2.5rem;
   width: 95%;

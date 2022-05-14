@@ -16,9 +16,15 @@ const SexToyCategoryCard = ({ category }) => {
 
 const Wrapper = styled.div`
   padding: 2rem;
-  background-color: var(--black);
-  border: 2px solid var(--primary);
+  background-color: #3100294a;
+  border-radius: 2rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+
+  p {
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
 
   h2 {
     animation-name: example;
