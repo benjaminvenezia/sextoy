@@ -47,11 +47,11 @@ const Landing = () => {
           <p>
             <span className="span1 fading-animation1">Dis-nous en plus sur toi</span>
             <br />
-            <span className="fall-animation">...</span>
+            <span className="span1 fading-animation1">...</span>
             <br />
             <span className="span2 fading-animation2">Laisse nous te guider</span>
             <br />
-            <span className="fall-animation">...</span>
+            <span className="span1 fading-animation2">...</span>
             <br />
             <span className="span3 fading-animation3">
               Et soit la {counter} ème personne à trouver le sextoy de ses rêves.
@@ -111,6 +111,7 @@ const Wrapper = styled.main`
     margin-top: 7%;
     text-align: center;
     p {
+      text-shadow: 5px 5px 15px black, 5px 5px 15px black;
       margin: 0 auto;
       span {
         font-family: Helvetica, sans-serif;
@@ -128,7 +129,7 @@ const Wrapper = styled.main`
       }
       .span3 {
         opacity: 0;
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
     }
   }
