@@ -1,0 +1,30 @@
+[
+  {
+    "label_question": "Quelle 'sensation' liée à ton clitoris désires-tu?",
+    "responses": [
+      { "label_answer": "Succion", "tags": ["succion"] },
+      { "label_answer": "Vibration", "tags": ["vibration"] }
+    ],
+    "level": 3,
+    "tags_match": ["femme", "clitoridien"]
+  },
+  {
+    "label_question": "Succion, très bien! Il existe deux actions possible, choisi ta préférée.",
+    "responses": [
+      { "label_answer": "Pompage", "tags": ["pompe"] },
+      { "label_answer": "Stimulateur", "tags": ["stimulateur"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "clitoridien", "succion"]
+  },
+  {
+    "label_question": "Quelle taille te convient le mieux?",
+    "responses": [
+      { "label_answer": "Grand!", "tags": ["grand"] },
+      { "label_answer": "Moyen!", "tags": ["moyen"] },
+      { "label_answer": "Petit!", "tags": ["petit"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "clitoridien", "vibration"]
+  }
+]

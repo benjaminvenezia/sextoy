@@ -1,0 +1,20 @@
+[
+  {
+    "label_question": "Comment désires-tu que le sextoy intéragisse avec tes seins?",
+    "responses": [
+      { "label_answer": "Par Pincement", "tags": ["pincement"] },
+      { "label_answer": "Par Aspiration", "tags": ["aspiration"] }
+    ],
+    "level": 3,
+    "tags_match": ["femme", "mammaire"]
+  },
+  {
+    "label_question": "Veux-tu que l'aspiration soit crée par un moteur?",
+    "responses": [
+      { "label_answer": "Je préfère de manière manuelle!", "tags": ["manuel"] },
+      { "label_answer": "Un moteur me convient!", "tags": ["robotise"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "mammaire", "aspiration"]
+  }
+]

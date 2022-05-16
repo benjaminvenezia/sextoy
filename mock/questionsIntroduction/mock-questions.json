@@ -1,0 +1,40 @@
+[
+  {
+    "label_question": "Etes-vous un homme ou une femme?",
+    "responses": [
+      { "label_answer": "un homme", "tags": ["homme"] },
+      { "label_answer": "une femme", "tags": ["femme"] }
+    ],
+    "level": 1,
+    "tags_match": [null]
+  },
+  {
+    "label_question": "Quelle partie de votre intimité souhaitez-vous stimuler?",
+    "responses": [
+      { "label_answer": "Mon pénis", "tags": ["penis"] },
+      { "label_answer": "Ma Prostate", "tags": ["prostate"] }
+    ],
+    "level": 2,
+    "tags_match": ["homme"]
+  },
+  {
+    "label_question": "Quelle partie de votre intimité souhaitez-vous stimuler?",
+    "responses": [
+      { "label_answer": "Mon pénis", "tags": ["penis"] },
+      { "label_answer": "Ma Prostate", "tags": ["prostate"] }
+    ],
+    "level": 2,
+    "tags_match": ["homme"]
+  },
+  {
+    "label_question": "Quel plaisir préfères-tu?",
+    "responses": [
+      { "label_answer": "Anal", "tags": ["anal"] },
+      { "label_answer": "Vaginal", "tags": ["vaginal"] },
+      { "label_answer": "Mammaire", "tags": ["mammaire"] },
+      { "label_answer": "Clitoridien", "tags": ["clitoridien"] }
+    ],
+    "level": 2,
+    "tags_match": ["femme"]
+  }
+]
