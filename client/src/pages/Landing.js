@@ -44,7 +44,8 @@ const Landing = () => {
   if (showLanding) {
     return (
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
-        {showLoader && <BadConnexionLoader />}
+        {showLoader && !isSafari && <BadConnexionLoader />}
+
         {!isSafari && (
           <video
             autoPlay={true}
