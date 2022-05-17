@@ -81,6 +81,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
+  height: 100vh;
+  width: 100%;
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
