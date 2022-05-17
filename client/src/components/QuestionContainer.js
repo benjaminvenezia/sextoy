@@ -65,7 +65,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   background-color: transparent;
   border-radius: 2.5rem;
-  width: 95%;
+  width: 98%;
   text-align: center;
   margin-top: 117px;
 

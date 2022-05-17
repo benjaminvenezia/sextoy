@@ -4,6 +4,13 @@ import { useState, useEffect } from 'react'
 import QuestionPage from './QuestionPage'
 import axios from 'axios'
 import video from '../assets/video/Animation_Desyre.mp4'
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+  isSafari,
+} from 'react-device-detect'
 
 const Landing = () => {
   const [showLanding, setShowLanding] = useState(true)
@@ -38,11 +45,18 @@ const Landing = () => {
     return (
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
         {showLoader && <BadConnexionLoader />}
-
-        <video autoplay muted onLoadedData={loadVideo}>
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {!isSafari && (
+          <video
+            autoPlay={true}
+            playsInline
+            muted
+            defaultMuted
+            onLoadedData={loadVideo}
+          >
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
         <div className="text-container">
           <p>
             <span className="span1 fading-animation1">Dis-nous en plus sur toi</span>
@@ -61,7 +75,6 @@ const Landing = () => {
             Découvrir
           </HipsterButton>
         </div>
-
         <NetworksIcons />
       </Wrapper>
     )
