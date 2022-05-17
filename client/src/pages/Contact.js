@@ -32,7 +32,7 @@ function Contact() {
       <div className="backgorud">
         <div className="container">
           <form ref={form} onSubmit={sendEmail} className="contactForm">
-            <h1>CONTACTEZ-NOUS </h1>
+            <h1>CONTACTEs NOUS !</h1>
             <div className="contain1">
               <input
                 className="input1"
