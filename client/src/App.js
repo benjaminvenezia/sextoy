@@ -1,6 +1,6 @@
 import GlobalStyles from './global-styles'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { ErrorPage, LoginPage, Landing } from './pages'
+import { ErrorPage, LoginPage, Landing, Contact } from './pages'
 import { Navbar } from './components'
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
           <Route index element={<Landing />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/Contact" element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </div>

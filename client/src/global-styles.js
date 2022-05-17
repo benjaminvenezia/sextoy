@@ -9,10 +9,12 @@ const GlobalStyles = createGlobalStyle`
 }
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 html {
   font-size: 100%;
+  /* overflow: hidden; */
 } /*16px*/
 
 :root {
@@ -251,7 +253,8 @@ ul {
 }
 ::placeholder {
   font-family: inherit;
-  color: var(--grey-400);
+  /* color: var(--grey-400); */
+  color: #F6EBD8;
 }
 .form-alert {
   color: var(--red-dark);
