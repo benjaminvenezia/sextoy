@@ -50,17 +50,42 @@ const start = async () => {
     )
 
     const questionJson = JSON.parse(
-      await readFile(new URL('./mock/mock-questions.json', import.meta.url))
+      await readFile(
+        new URL('./mock/questionsIntroduction/mock-questions.json', import.meta.url)
+      )
     )
     const questionHommePenisJson = JSON.parse(
       await readFile(
-        new URL('./mock/mock-questions-homme-penis.json', import.meta.url)
+        new URL(
+          './mock/questionsHommes/mock-questions-homme-penis.json',
+          import.meta.url
+        )
       )
     )
 
     const questionHommeProstateJson = JSON.parse(
       await readFile(
-        new URL('./mock/mock-questions-homme-prostate.json', import.meta.url)
+        new URL(
+          './mock/questionsHommes/mock-questions-homme-prostate.json',
+          import.meta.url
+        )
+      )
+    )
+
+    const questionFemmeClitoridienJson = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-clitoridien.json',
+          import.meta.url
+        )
+      )
+    )
+    const questionFemmeMammaireJson = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-mammaire.json',
+          import.meta.url
+        )
       )
     )
 
@@ -75,6 +100,8 @@ const start = async () => {
     await Question.create(questionJson)
     await Question.create(questionHommePenisJson)
     await Question.create(questionHommeProstateJson)
+    await Question.create(questionFemmeClitoridienJson)
+    await Question.create(questionFemmeMammaireJson)
 
     console.log('Table sextoy réinitialisée et remplie!')
     console.log('Table question réinitialisée et remplie!')

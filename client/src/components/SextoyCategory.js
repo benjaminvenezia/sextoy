@@ -10,6 +10,7 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
   const [categories, setCategories] = useState()
 
   const fetchData = async (url) => {
+    await axios.patch('api/v1/counter')
     const response = await axios.get(url)
 
     setCategories(response.data)
@@ -19,15 +20,22 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
     fetchData(url2)
   }, [])
 
-  return (
-    <Wrapper>
-      {categories?.count > 0 ? (
-        ((<p>{categories?.count} catégorie de sextoy trouvée!</p>),
-        categories?.sextoys.map((category) => {
+  if (categories?.count > 0) {
+    return (
+      <Wrapper>
+        <p>
+          {categories.count} catégorie{categories.count > 1 ? 's' : ''} trouvée{''}
+          {categories.count > 1 ? 's' : ''}
+        </p>
+        {categories?.sextoys.map((category) => {
           return <SexToyCategoryCard key={category._id} category={category} />
-        }))
-      ) : (
-        <>
+        })}
+      </Wrapper>
+    )
+  } else {
+    return (
+      <Wrapper>
+        <div className="no-match-container">
           <p>
             Malheureusement, aucune catégorie n'a matché avec vos conditions! 🥺{' '}
             <br />
@@ -38,14 +46,21 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
               Revenir à la homepage
             </HipsterButton>
           </p>
-        </>
-      )}
-    </Wrapper>
-  )
+        </div>
+      </Wrapper>
+    )
+  }
 }
 
 const Wrapper = styled.div`
+  .no-match-container {
+    display: flex;
+    justify-content: center;
+  }
+
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: var(--primary);
 

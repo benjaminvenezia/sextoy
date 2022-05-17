@@ -12,7 +12,6 @@ import {
 export const initialState = {
   questions: [],
   tags: [],
-  hello: true,
 }
 
 const AppContext = React.createContext()

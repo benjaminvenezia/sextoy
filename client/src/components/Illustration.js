@@ -10,7 +10,6 @@ const Illustration = () => {
   const pickRandomIllustration = () => {
     const illustrations = [illu_1, illu_2, illu_3]
     const randomId = Math.floor(Math.random() * 3)
-    console.log(randomId)
     return illustrations[randomId]
   }
 
@@ -23,10 +22,13 @@ const Illustration = () => {
 }
 
 const StyledImage = styled.img`
-  width: 30%;
+  width: auto;
+  height: 60%;
+  overflow: hidden;
   position: absolute;
-  right: 0;
+  right: 20%;
   opacity: 0.5;
+  z-index: -100;
 
   @media (max-width: 992px) {
     width: 50%;

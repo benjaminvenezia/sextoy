@@ -32,9 +32,6 @@ const QuestionPage = () => {
   )
 }
 
-const Wrapper = styled.div`
-  min-height: 100vh;
-  max-height: 100vh;
-`
+const Wrapper = styled.div``
 
 export default QuestionPage

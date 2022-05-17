@@ -6,10 +6,10 @@ const SextoyArticle = ({ article }) => {
     <Wrapper>
       <h3>{article.name_shop}</h3>
       <div className="buttons-container">
-        <HipsterButton as="a" href={article.url_category}>
+        <HipsterButton as="a" id="link-category" href={article.url_category}>
           Visiter la catégorie
         </HipsterButton>
-        <HipsterButton as="a" href={article.url_product}>
+        <HipsterButton as="a" id="link-product" href={article.url_product}>
           {article.name_shop} vous recommande ce produit!
         </HipsterButton>
         <HipsterButton as="a" href="/">
@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   box-shadow: 0px 0px 5px white;
   background-color: var(--black);
   padding: 1rem;
+
   border-radius: 10px;
   margin-bottom: 10px;
 
