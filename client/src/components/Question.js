@@ -49,12 +49,12 @@ const Question = ({ question, handleClick }) => {
 const Wrapper = styled.div`
   .container-response {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
   }
 
   margin: 0 auto;
   .buttons-answers {
-    margin-top: 120px;
+    margin-top: 85px;
     display: flex;
     justify-content: center;
   }
