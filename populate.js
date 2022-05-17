@@ -48,6 +48,23 @@ const start = async () => {
         new URL('./mock/sextoysCategories/mock-poupees.json', import.meta.url)
       )
     )
+    const jsonSextoyStimulateurs = JSON.parse(
+      await readFile(
+        new URL('./mock/sextoysCategories/mock-stimulateurs.json', import.meta.url)
+      )
+    )
+
+    const jsonSextoyClitoris = JSON.parse(
+      await readFile(
+        new URL('./mock/sextoysCategories/mock-clitoris.json', import.meta.url)
+      )
+    )
+
+    const jsonSextoyMammaire = JSON.parse(
+      await readFile(
+        new URL('./mock/sextoysCategories/mock-mammaire.json', import.meta.url)
+      )
+    )
 
     const questionJson = JSON.parse(
       await readFile(
@@ -144,6 +161,9 @@ const start = async () => {
     await Sextoy.create(jsonSextoyGodes)
     await Sextoy.create(jsonSextoyMasturbateurs)
     await Sextoy.create(jsonSextoyPoupees)
+    await Sextoy.create(jsonSextoyStimulateurs)
+    await Sextoy.create(jsonSextoyClitoris)
+    await Sextoy.create(jsonSextoyMammaire)
 
     await Question.create(questionJson)
     await Question.create(questionHommePenisJson)

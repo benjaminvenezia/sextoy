@@ -151,5 +151,57 @@
         "url_product": "https://www.kisskiss.ch/fr/plug-anal-lovense-hush"
       }
     ]
+  },
+  {
+    "category": "plug",
+    "name": "Plug anal vibrant ",
+    "description": "Ce plug saura éveillez ton plaisir anal, pour commencer à savourer ce plaisir, il est le petit-ami parfait.",
+    "tags_match": ["femme", "anal", "penetration", "petit"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/fr/sex-toys-pour-femme/#/dffullscreen/query=Plug%20vibrant%20anal&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/nexus-g-play-plus"
+      }
+    ]
+  },
+  {
+    "category": "plug",
+    "name": "Plug anal en silicone ",
+    "description": "Le plug anal saura te préparer pour un plaisir anal plus intense en solitaire ou en duo.",
+    "tags_match": ["femme", "anal", "manuel", "silicone", "stimulation", "petit"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/#/dffullscreen/query=plug%20silicone&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/plug-anal-silicone-violet"
+      }
+    ]
+  },
+  {
+    "category": "plug",
+    "name": "Plug anal en verre ",
+    "description": "Ce plug en verre saura éveiller ton plaisir anal, pour commencer à savourer ce plaisir, il est le petit-ami parfait.",
+    "tags_match": ["femme", "anal", "manuel", "verre", "stimulation"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/fr/sex-toys-pour-femme/#/dffullscreen/query=plug%20anal%20verre&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/pipedream-icicles-26-plug"
+      }
+    ]
+  },
+  {
+    "category": "plug",
+    "name": "Plug anal en bois ",
+    "description": "Ce plug en bois saura éveiller ton plaisir anal, pour commencer à savourer ce plaisir, il est le petit-ami parfait.",
+    "tags_match": ["femme", "anal", "manuel", "bois", "stimulation"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/fr/vibromasseur-realiste/#/dffullscreen/query=anal%20dildo%20bois&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/dildo-bois-nobessence-allure"
+      }
+    ]
   }
 ]

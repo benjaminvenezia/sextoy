@@ -1,0 +1,41 @@
+[
+  {
+    "category": "mammaire",
+    "name": "Pinces tétons",
+    "description": "Si vous êtes sensible au niveau des tétons, le pince tétons est une bonne alternative peu onéreuse à l'aspire tétons. ",
+    "tags_match": ["femme", "mammaire", "pincement"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/fr/pompes-vaginales/#/dffullscreen/query=pression%20t%C3%A9ton&filters%5Bcategories%5D%5B0%5D=Pinces%20%C3%A0%20seins%20%26%20clitoris&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/pinces-tetons-guilty-pleasure"
+      }
+    ]
+  },
+  {
+    "category": "mammaire",
+    "name": "Aspire tétons vibrant",
+    "description": "Cet aspire tétons vibrant saura vous apporter le plaisir mammaire que tu recherches.",
+    "tags_match": ["femme", "mammaire", "aspiration", "robotise"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/fr/pompes-vaginales/#/dffullscreen/query=aspire%20t%C3%A9ton%20vibrant&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/aspire-tetons-vibrants"
+      }
+    ]
+  },
+  {
+    "category": "mammaire",
+    "name": "Aspire tétons",
+    "description": "Cet aspire tétons saura vous apporter le plaisir mammaire que tu recherches.",
+    "tags_match": ["femme", "mammaire", "aspiration", "manuel"],
+    "articles": [
+      {
+        "name_shop": "KISSKISS.ch",
+        "url_category": "https://www.kisskiss.ch/fr/pompes-vaginales/#/dffullscreen/query=t%C3%A9ton%20aspire&query_name=match_and",
+        "url_product": "https://www.kisskiss.ch/fr/aspire-tetons"
+      }
+    ]
+  }
+]

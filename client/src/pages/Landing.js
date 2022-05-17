@@ -39,7 +39,7 @@ const Landing = () => {
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
         {showLoader && <BadConnexionLoader />}
 
-        <video autoPlay muted onLoadedData={loadVideo}>
+        <video autoplay muted onLoadedData={loadVideo}>
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
