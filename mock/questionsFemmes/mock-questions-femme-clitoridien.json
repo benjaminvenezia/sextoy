@@ -1,6 +1,6 @@
 [
   {
-    "label_question": "Quelle 'sensation' liée à ton clitoris désires-tu?",
+    "label_question": "Tu préfères les vibrations ou la succion de ton clitoris ?",
     "responses": [
       { "label_answer": "Succion", "tags": ["succion"] },
       { "label_answer": "Vibration", "tags": ["vibration"] }
