@@ -47,13 +47,7 @@ const Landing = () => {
         {showLoader && !isSafari && <BadConnexionLoader />}
 
         {!isSafari && (
-          <video
-            autoPlay={true}
-            playsInline
-            muted
-            defaultMuted
-            onLoadedData={loadVideo}
-          >
+          <video autoPlay={true} playsInline muted onLoadedData={loadVideo}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
