@@ -141,7 +141,7 @@ const Wrapper = styled.main`
     &:focus {
       border: none;
       outline-style: none;
-      box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
+      box-shadow: 0px 0px 5px white, 0px 0px 25px lightgray, 0px 0px 35px gray;
     }
 
     &:hover {
@@ -159,7 +159,7 @@ const Wrapper = styled.main`
     button {
       margin-top: 35%;
       padding: 25px 45px;
-      box-shadow: 0px 0px 5px pink, 0px 0px 25px magenta, 0px 0px 35px purple;
+      box-shadow: 0px 0px 5px white, 0px 0px 25px lightgray, 0px 0px 35px gray;
     }
   }
 
