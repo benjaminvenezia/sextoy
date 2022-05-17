@@ -88,6 +88,54 @@ const start = async () => {
         )
       )
     )
+    const questionFemmeVaginalFantaisie = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-vaginal-fantaisie.json',
+          import.meta.url
+        )
+      )
+    )
+    const questionFemmeVaginalRealiste = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-vaginal-realiste.json',
+          import.meta.url
+        )
+      )
+    )
+    const questionFemmeAnalManuel = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-anal-manuel.json',
+          import.meta.url
+        )
+      )
+    )
+    const questionFemmeAnalRobotise = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-anal-robotise.json',
+          import.meta.url
+        )
+      )
+    )
+    const questionFemmeAnal = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-anal.json',
+          import.meta.url
+        )
+      )
+    )
+    const questionFemmeVaginal = JSON.parse(
+      await readFile(
+        new URL(
+          './mock/questionsFemmes/mock-questions-femme-vaginal.json',
+          import.meta.url
+        )
+      )
+    )
 
     await Sextoy.create(jsonSextoyPlugs)
     await Sextoy.create(jsonSextoyVaginettes)
@@ -102,6 +150,12 @@ const start = async () => {
     await Question.create(questionHommeProstateJson)
     await Question.create(questionFemmeClitoridienJson)
     await Question.create(questionFemmeMammaireJson)
+    await Question.create(questionFemmeVaginalFantaisie)
+    await Question.create(questionFemmeVaginalRealiste)
+    await Question.create(questionFemmeAnalManuel)
+    await Question.create(questionFemmeAnalRobotise)
+    await Question.create(questionFemmeAnal)
+    await Question.create(questionFemmeVaginal)
 
     console.log('Table sextoy réinitialisée et remplie!')
     console.log('Table question réinitialisée et remplie!')

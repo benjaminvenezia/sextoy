@@ -1,0 +1,41 @@
+[
+  {
+    "label_question": "Quelle plaisir anale veux-tu que ton sextoy te procure ?",
+    "responses": [
+      { "label_answer": "Penetration", "tags": ["penetration"] },
+      { "label_answer": "Stimulation", "tags": ["stimulation"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "anal", "robotise"]
+  },
+  {
+    "label_question": "Quelle taille désires-tu pour ton sextoy ?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "anal", "robotise", "penetration"]
+  },
+  {
+    "label_question": "Désires-tu que ton sextoy soit automatique ?",
+    "responses": [
+      { "label_answer": "Automatique", "tags": ["automatique"] },
+      { "label_answer": "non-automatique", "tags": ["non-automatique"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 6,
+    "tags_match": ["femme", "anal", "robotise", "penetration", "grand"]
+  },
+  {
+    "label_question": "Quelle taille désires-tu pour ton sextoy ?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "anal", "robotise", "stimulation"]
+  }
+]

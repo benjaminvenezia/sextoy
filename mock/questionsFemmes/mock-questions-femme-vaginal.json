@@ -1,0 +1,11 @@
+[
+  {
+    "label_question": "Désires-tu du réalisme dans ton sextoy?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["realiste"] },
+      { "label_answer": "Non", "tags": ["fantaisie"] }
+    ],
+    "level": 3,
+    "tags_match": ["femme", "vaginal"]
+  }
+]

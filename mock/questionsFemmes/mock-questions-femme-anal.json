@@ -1,0 +1,11 @@
+[
+  {
+    "label_question": "Veux-tu qu’il soit robotisé?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 3,
+    "tags_match": ["femme", "anal"]
+  }
+]

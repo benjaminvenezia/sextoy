@@ -1,0 +1,91 @@
+[
+  {
+    "label_question": "Veux-tu que ton sextoy soit robotisé?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 3,
+    "tags_match": ["femme", "vaginal", "fantaisie"]
+  },
+  {
+    "label_question": "Quelle sensation préfères-tu pour ton vagin ?",
+    "responses": [
+      { "label_answer": "Stimulation", "tags": ["stimulation"] },
+      { "label_answer": "Penetration", "tags": ["penetration"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "vaginal", "fantaisie", "robotise"]
+  },
+  {
+    "label_question": "Quelle stimulation de ton vagin désires-tu?",
+    "responses": [
+      { "label_answer": "Stimulation", "tags": ["stimulation"] },
+      { "label_answer": "Penetration", "tags": ["penetration"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "vaginal", "fantaisie", "manuel"]
+  },
+  {
+    "label_question": "Quelle taille pour ton sextoy?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "vaginal", "fantaisie", "robotise", "penetration"]
+  },
+  {
+    "label_question": "As-tu une préférence en terme de matériau?",
+    "responses": [
+      { "label_answer": "Silicone", "tags": ["silicone"] },
+      { "label_answer": "Verre", "tags": ["verre"] },
+      { "label_answer": "Bois", "tags": ["bois"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "vaginal", "fantaisie", "manuel", "penetration"]
+  },
+  {
+    "label_question": "As-tu une préférence en terme de matériau?",
+    "responses": [
+      { "label_answer": "Silicone", "tags": ["silicone"] },
+      { "label_answer": "Métal", "tags": ["metail"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "vaginal", "fantaisie", "manuel", "stimulation"]
+  },
+  {
+    "label_question": "Souhaites-tu que l'objet soit automatisé?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["automatique"] },
+      { "label_answer": "Non", "tags": ["non-automatique"] }
+    ],
+    "level": 6,
+    "tags_match": [
+      "femme",
+      "vaginal",
+      "fantaisie",
+      "robotise",
+      "penetration",
+      "grand"
+    ]
+  },
+  {
+    "label_question": "Quelle taille pour ton sextoy?",
+    "responses": [
+      { "label_answer": "Grand", "tags": ["grand"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Petit", "tags": ["petit"] }
+    ],
+    "level": 6,
+    "tags_match": [
+      "femme",
+      "vaginal",
+      "fantaisie",
+      "manuel",
+      "penetration",
+      "silicone"
+    ]
+  }
+]

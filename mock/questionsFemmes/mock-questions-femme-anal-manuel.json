@@ -1,0 +1,48 @@
+[
+  {
+    "label_question": "Quelle matière désires-tu pour ton sextoy?",
+    "responses": [
+      { "label_answer": "Silicone", "tags": ["silicone"] },
+      { "label_answer": "Verre", "tags": ["verre"] },
+      { "label_answer": "Bois", "tags": ["bois"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "anal", "manuel"]
+  },
+  {
+    "label_question": "Quel plaisir anal veux-tu que ton sextoy te procure ?",
+    "responses": [
+      { "label_answer": "Stimulation", "tags": ["stimulation"] },
+      { "label_answer": "Pénétration", "tags": ["penetration"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "anal", "manuel", "silicone"]
+  },
+  {
+    "label_question": "Quelle taille désires-tu pour ton sextoy ?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 6,
+    "tags_match": ["femme", "anal", "manuel", "silicone", "stimulation"]
+  },
+  {
+    "label_question": "Quel plaisir anal veux-tu que ton sextoy te procure ?",
+    "responses": [
+      { "label_answer": "Stimulation", "tags": ["stimulation"] },
+      { "label_answer": "Pénétration", "tags": ["penetration"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "anal", "manuel", "verre"]
+  },
+  {
+    "label_question": "Quel plaisir anal veux-tu que ton sextoy te procure ?",
+    "responses": [
+      { "label_answer": "Stimulation", "tags": ["stimulation"] },
+      { "label_answer": "Pénétration", "tags": ["penetration"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "anal", "manuel", "bois"]
+  }
+]

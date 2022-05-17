@@ -1,0 +1,59 @@
+[
+  {
+    "label_question": "Veux-tu que ton sextoy soit robotisé?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 3,
+    "tags_match": ["femme", "vaginal", "realiste"]
+  },
+  {
+    "label_question": "Quelles sont tes attentes en terme de taille?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "vaginal", "realiste", "robotise"]
+  },
+  {
+    "label_question": "Quelle matière pour ton sextoy?",
+    "responses": [
+      { "label_answer": "Silicone", "tags": ["silicone"] },
+      { "label_answer": "Verre", "tags": ["verre"] }
+    ],
+    "level": 4,
+    "tags_match": ["femme", "vaginal", "realiste", "manuel"]
+  },
+  {
+    "label_question": "Souhaites-tu que l'objet soit automatisé?",
+    "responses": [
+      { "label_answer": "Oui", "tags": ["robotise"] },
+      { "label_answer": "Non", "tags": ["manuel"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "vaginal", "realiste", "robotise", "grand"]
+  },
+  {
+    "label_question": "Quelles sont tes attentes en terme de taille?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "vaginal", "realiste", "manuel", "silicone"]
+  },
+  {
+    "label_question": "Quelles sont tes attentes en terme de taille pour cet objet en verre?",
+    "responses": [
+      { "label_answer": "Petit", "tags": ["petit"] },
+      { "label_answer": "Moyen", "tags": ["moyen"] },
+      { "label_answer": "Grand", "tags": ["grand"] }
+    ],
+    "level": 5,
+    "tags_match": ["femme", "vaginal", "realiste", "manuel", "verre"]
+  }
+]
