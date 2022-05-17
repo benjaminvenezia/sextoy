@@ -1,30 +1,30 @@
 import styled from 'styled-components'
 import { Logo } from '.'
 
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <Wrapper>
       <Logo />
 
-      {/* <div className="containerNavElmt">
-          <Link className="salut" to="/">
+      <div className="containerNavElmt">
+          <Link className="NavElmt" to="/">
             Homme
           </Link>
-          <Link className="salut" to="/">
+          <Link className="NavElmt" to="/">
             Femme
           </Link>
-          <Link className="salut" to="/">
+          <Link className="NavElmt" to="/">
             Couple
           </Link>
-          <Link className="salut" to="/">
+          <Link className="NavElmt" to="/">
             Partenaires
           </Link>
-          <Link className="salut" to="/">
+          <Link className="NavElmt" to="/Contact">
             Contacts
           </Link>
-        </div> */}
+      </div>
     </Wrapper>
   )
 }
@@ -32,9 +32,17 @@ const Navbar = () => {
 const Wrapper = styled.nav`
   height: var(--nav-height);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
 
-  .salut {
+  img {
+    margin-top: 10px;
+    width: 100px;
+  }
+
+  .NavElmt {
     color: rgb(246, 235, 216);
     margin-left: 40px;
     padding-bottom: 7px;

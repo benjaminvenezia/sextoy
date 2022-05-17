@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 100%;
+  /* overflow: hidden; */
 } /*16px*/
 
 :root {
@@ -203,7 +204,6 @@ ul {
 .form-row {
   margin-bottom: 1rem;
 }
-
 
 .remove-animation {
   transform: translateY(6000px);
