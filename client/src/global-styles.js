@@ -77,12 +77,14 @@ html {
 }
 
 body {
+  object-fit: cover;
   background-image: url(${imagefond});
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
