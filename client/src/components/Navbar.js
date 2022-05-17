@@ -9,7 +9,7 @@ const Navbar = () => {
       <Logo />
 
       <div className="containerNavElmt">
-          <Link className="NavElmt" to="/">
+        {/* <Link className="NavElmt" to="/">
             Homme
           </Link>
           <Link className="NavElmt" to="/">
@@ -20,10 +20,10 @@ const Navbar = () => {
           </Link>
           <Link className="NavElmt" to="/">
             Partenaires
-          </Link>
-          <Link className="NavElmt" to="/Contact">
-            Contacts
-          </Link>
+          </Link> */}
+        <Link className="NavElmt" to="/Contact">
+          Contacts
+        </Link>
       </div>
     </Wrapper>
   )
