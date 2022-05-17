@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
+
 const GlobalStyles = createGlobalStyle`
 
 *,
@@ -15,6 +16,7 @@ html {
   font-size: 100%;
   /* overflow: hidden; */
 } /*16px*/
+
 
 :root {
   --primary: #F6EBD8;
@@ -75,7 +77,6 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
