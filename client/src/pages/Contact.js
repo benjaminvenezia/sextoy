@@ -61,12 +61,14 @@ function Contact() {
                 placeholder="Téléphone"
               />
             </div>
-            <input
-              className="message"
-              type="text"
-              name="entre_msg"
-              placeholder="Message"
-            />
+            <div className="contain3">
+              <input
+                className="message"
+                type="text"
+                name="entre_msg"
+                placeholder="Message"
+              />
+            </div>
             <div className="containerBTN">
               <button type="submit" className="btnForm">
                 Envoyez
@@ -80,7 +82,6 @@ function Contact() {
 }
 
 const Wrapper = styled.div`
-
   /* .backgorud{
     background: url(${imagefond});
     background-size: cover;
@@ -91,9 +92,13 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
-    height: 500px;
+    margin-top: 7%;
+    height: auto;
     width: auto;
+
+    ::placeholder {
+      color: #f6ebd8;
+    }
 
     h1 {
       color: #f6ebd8;
@@ -138,6 +143,27 @@ const Wrapper = styled.div`
       border: 1px solid #f6ebd8;
       border-radius: 15px;
       color: #f6ebd8;
+    }
+
+    @media screen and (max-width: 950px) {
+      .contain1,
+      .contain2,
+      .contain3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .input1 {
+          margin-right: 0;
+        }
+      }
+      .message {
+        width: 275px;
+      }
+      h1{
+        font-size: x-large;
+      }
     }
   }
 `
