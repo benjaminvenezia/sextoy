@@ -64,7 +64,6 @@ const Wrapper = styled.nav`
     background-size: 100% 100%;
   }
 
-  background: var(--black);
-`
+ `
 
 export default Navbar

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-
+import imagefond from './assets/images/Fonddraps.jpg'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -16,7 +16,7 @@ html {
   font-size: 100%;
   /* overflow: hidden; */
 } /*16px*/
-
+  
 
 :root {
   --primary: #F6EBD8;
@@ -77,6 +77,10 @@ html {
 }
 
 body {
+  background-image: url(${imagefond});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
