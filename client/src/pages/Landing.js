@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react'
 import QuestionPage from './QuestionPage'
 import axios from 'axios'
 import video from '../assets/video/Animation_Desyre.mp4'
+import video_mobile from '../assets/video/Mobile.mp4'
 import {
   BrowserView,
   MobileView,
@@ -51,12 +52,20 @@ const Landing = () => {
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
         {showLoader && !isSafari && <BadConnexionLoader />}
 
-        {!isSafari && (
+        {!isSafari && !isMobile && (
           <video autoPlay={true} playsInline muted onLoadedData={loadVideo}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         )}
+
+        {isMobile && (
+          <video autoPlay={true} playsInline muted onLoadedData={loadVideo}>
+            <source src={video_mobile} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
+
         <div className="text-container">
           <p>
             <span className="span1 fading-animation1">Dis-nous en plus sur toi</span>
