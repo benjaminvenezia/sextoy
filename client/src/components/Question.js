@@ -47,12 +47,13 @@ const Question = ({ question, handleClick }) => {
 }
 
 const Wrapper = styled.div`
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
   .container-response {
     margin: 0 auto;
     width: 100%;
   }
-
-  margin: 0 auto;
   .buttons-answers {
     margin-top: 85px;
     display: flex;
@@ -65,13 +66,10 @@ const Wrapper = styled.div`
     font-style: italic;
   }
 
-  width: 50%;
   h1 {
     color: var(--primary);
     font-size: 1.4rem;
   }
-  padding: 20px;
-  box-shadow: 1px 1px 15px black;
 
   @media (max-width: 992px) {
     width: 100%;
