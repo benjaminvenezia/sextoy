@@ -86,7 +86,7 @@ const Wrapper = styled.main`
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 1;
   }
 
   .fading-animation1 {

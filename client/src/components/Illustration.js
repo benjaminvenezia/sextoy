@@ -47,7 +47,7 @@ const StyledImage = styled.img`
 //masturbation
 const Illu1 = styled(StyledImage)`
   height: 80%;
-  bottom: 0;
+  bottom: 50px;
   left: 0;
 
   @media (max-width: 992px) {
@@ -70,7 +70,7 @@ const Illu2 = styled(StyledImage)`
 const Illu3 = styled(StyledImage)`
   height: 80%;
   right: 20px;
-
+  bottom: 30px;
   @media (max-width: 992px) {
     width: 70%;
     bottom: 0;
