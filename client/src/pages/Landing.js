@@ -1,4 +1,9 @@
-import { NetworksIcons, HipsterButton, BadConnexionLoader } from '../components'
+import {
+  NetworksIcons,
+  HipsterButton,
+  BadConnexionLoader,
+  Logo,
+} from '../components'
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 import QuestionPage from './QuestionPage'
