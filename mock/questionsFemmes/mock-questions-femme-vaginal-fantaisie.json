@@ -50,7 +50,7 @@
     "label_question": "As-tu une préférence en terme de matériau?",
     "responses": [
       { "label_answer": "Silicone", "tags": ["silicone"] },
-      { "label_answer": "Métal", "tags": ["metail"] }
+      { "label_answer": "Métal", "tags": ["metal"] }
     ],
     "level": 5,
     "tags_match": ["femme", "vaginal", "fantaisie", "manuel", "stimulation"]

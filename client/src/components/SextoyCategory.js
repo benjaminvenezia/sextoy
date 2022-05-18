@@ -36,16 +36,7 @@ const SextoyCategory = ({ tagsNextQuestion }) => {
     return (
       <Wrapper>
         <div className="no-match-container">
-          <p>
-            Malheureusement, aucune catégorie n'a matché avec vos conditions! 🥺{' '}
-            <br />
-            Nous oeuvrons actuellement pour augmenter le champs des possibles! Merci
-            de réessayer prochainement!
-            <br />
-            <HipsterButton as="a" href="/">
-              Revenir à la homepage
-            </HipsterButton>
-          </p>
+          <p>Veuillez patienter, nous allons chercher votre catégorie...</p>
         </div>
       </Wrapper>
     )
