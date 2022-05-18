@@ -52,7 +52,7 @@ const Landing = () => {
       <Wrapper className={showAnimation ? 'remove-animation' : ''}>
         {showLoader && !isSafari && <BadConnexionLoader />}
 
-        {!isSafari && !isMobile && (
+        {!isSafari && (
           <video autoPlay={true} playsInline muted onLoadedData={loadVideo}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
@@ -180,7 +180,7 @@ const Wrapper = styled.main`
     }
 
     button {
-      margin-top: 35%;
+      margin-top: 25%;
       padding: 25px 45px;
       box-shadow: 0px 0px 5px white, 0px 0px 25px lightgray, 0px 0px 35px gray;
     }
