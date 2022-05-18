@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import imagefond from './assets/images/Fonddraps.jpg'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -77,19 +76,13 @@ html {
 }
 
 body {
-  object-fit: cover;
-  background-image: url(${imagefond});
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
+  color: var(--textColor);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
-  color: var(--textColor);
 }
+
+
 
 p {
   margin-bottom: 1.5rem;

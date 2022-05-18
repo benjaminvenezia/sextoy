@@ -18,15 +18,6 @@
     "tags_match": ["homme"]
   },
   {
-    "label_question": "Quelle partie de votre intimité souhaitez-vous stimuler?",
-    "responses": [
-      { "label_answer": "Mon pénis", "tags": ["penis"] },
-      { "label_answer": "Ma Prostate", "tags": ["prostate"] }
-    ],
-    "level": 2,
-    "tags_match": ["homme"]
-  },
-  {
     "label_question": "Quel plaisir préfères-tu?",
     "responses": [
       { "label_answer": "Anal", "tags": ["anal"] },
