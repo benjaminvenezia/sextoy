@@ -6,10 +6,20 @@ const SextoyArticle = ({ article }) => {
     <Wrapper>
       <h3>{article.name_shop}</h3>
       <div className="buttons-container">
-        <HipsterButton as="a" id="link-category" href={article.url_category}>
+        <HipsterButton
+          as="a"
+          id="link-category"
+          target="_blank"
+          href={article.url_category}
+        >
           Visiter la catégorie
         </HipsterButton>
-        <HipsterButton as="a" id="link-product" href={article.url_product}>
+        <HipsterButton
+          as="a"
+          id="link-product"
+          target="_blank"
+          href={article.url_product}
+        >
           {article.name_shop} vous recommande ce produit!
         </HipsterButton>
         <HipsterButton as="a" href="/">
